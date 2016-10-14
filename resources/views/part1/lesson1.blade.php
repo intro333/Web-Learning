@@ -10,72 +10,72 @@
     <div class="main-blok">
         <div class="block-console-left">
             <div class="descrption">HTML</div>
-<textarea autocomplete="off" id="textareaCode" spellcheck="false" wrap="logical">
-<div class="block-console-left">
-    <div class="descrption">Результат</div>
-    <div class="inside-console">
-        <h4>Квадрат</h4>
-        <!--Эти элементы меняют цвет при наведении мыши-->
-        <div class="container">
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-        </div>
-
-        <br/>
-
-        <h4>Круг</h4>
-        <!--Эти элементы меняют цвет при клике мыши-->
-        <div class="container">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-        </div>
-    </div>
+<textarea autocomplete="off" class="textareaCode" spellcheck="false" wrap="logical" readonly>
+<label>Меняем цвет квадрата при наведении мыши</label>
+<!--Эти элементы меняют цвет при наведении мыши-->
+<div class="container">
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
 </div>
 
+<br/>
 
+<label>Меняем цвет круга по клику мыши</label>
+<!--Эти элементы меняют цвет при клике мыши-->
+<div class="container">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+</div>
 </textarea>
-
         </div>
 
         <div class="block-console-left">
             <div class="descrption">CSS</div>
-            <div class="container">
-                <p class="inside-console">
-                    #footer {
-                    position: relative;
-                    z-index: 100;
-                    background: #eff0f1;
-                    background: -moz-linear-gradient(top, #eff0f1 0%, #ffffff 100%);
-                    background: -webkit-linear-gradient(top, #eff0f1 0%, #ffffff 100%);
-                    background: linear-gradient(to bottom, #eff0f1 0%, #ffffff 100%);
-                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eff0f1', endColorstr='#ffffff',GradientType=0 ); }
-                </p>
-            </div>
+<textarea autocomplete="off" class="textareaCode" spellcheck="false" wrap="logical" readonly>
+.square {
+    width:110px;
+    height:100px;
+    background:#2ca02c;
+    float:left;
+    margin:15px;
+    text-align:center;
+}
+
+.circle {
+    float:left;
+    width: 100px;
+    height: 100px;
+    background: cadetblue;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    margin:15px;
+}
+</textarea>
         </div>
 
         <div class="block-console-left">
             <div class="descrption">JQuery</div>
-            <div class="container">
-                <p class="inside-console">
-                    #footer {
-                    position: relative;
-                    z-index: 100;
-                    background: #eff0f1;
-                    background: -moz-linear-gradient(top, #eff0f1 0%, #ffffff 100%);
-                    background: -webkit-linear-gradient(top, #eff0f1 0%, #ffffff 100%);
-                    background: linear-gradient(to bottom, #eff0f1 0%, #ffffff 100%);
-                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eff0f1', endColorstr='#ffffff',GradientType=0 ); }
-                </p>
-            </div>
+<textarea autocomplete="off" class="textareaCode" spellcheck="false" wrap="logical" readonly>
+//Меняем цвет квадрата при наведении мыши
+$(document).on('mouseover', '.square', function () {
+    $(this).css('background','#66CDAA')
+});
+
+//Меняем цвет круга при нажатии мыши
+$(document).on('mouseup', '.circle', function () {
+    $(this).css('background','#FF4500')
+});
+</textarea>
         </div>
 
-        <div class="block-console-left">
+        <div class="block-console-result">
             <div class="descrption">Результат</div>
             <div class="inside-console">
-            <h4>Квадрат</h4>
-            <!-- Рисуем кубики.Эти три кубика будут менять цвет при наведении мыши-->
+            <label>Меняем цвет квадрата при наведении мыши</label>
+            <!--Эти элементы меняют цвет при наведении мыши-->
             <div class="container">
                 <div class="square"></div>
                 <div class="square"></div>
@@ -84,8 +84,8 @@
 
             <br/>
 
-            <h4>Круг</h4>
-            <!-- Рисуем кружки.Эти три кубика будут менять цвет при клике мыши-->
+             <label>Меняем цвет круга по клику мыши</label>
+            <!--Эти элементы меняют цвет при клике мыши-->
             <div class="container">
                 <div class="circle"></div>
                 <div class="circle"></div>
@@ -93,7 +93,6 @@
             </div>
             </div>
         </div>
-
     </div>
     {{--@include('includes.nextOrPrevLesson')--}}
 

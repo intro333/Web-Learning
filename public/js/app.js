@@ -54,6 +54,8 @@
             interval: 5000,
             pause: false
         });
+        /*Цвет для тегов*/
+        console.log($('textarea:eq(0)').val());
     });
 
     //Scroll by Max
@@ -100,6 +102,7 @@
      $(document).on('click', '.button-slider', function () {
          window.location.href = "/startLesson/1/1";
      });
+
     /*Подсветить www-logo*/
     $(document).on('mouseover', '.navbar-header', function () {
         $('.www-logo-image').attr('src', '/images/www-logo-ligth.jpg');
@@ -107,3 +110,4 @@
     $(document).on('mouseout', '.navbar-header', function () {
         $('.www-logo-image').attr('src', '/images/www-logo.jpg');
     });
+

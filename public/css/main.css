@@ -316,9 +316,18 @@ a:active, a:hover {
 .block-console-left {
     border: 2px solid #e8e8e8;
     position: relative;
-    overflow-y: hidden;
+    height: 300px;
+    float: left;
+    width: 49%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.block-console-result {
+    border: 2px solid #e8e8e8;
+    position: relative;
+    overflow-y: scroll;
     overflow-x: hidden;
-    height: 200px;
+    height: 300px;
     float: left;
     width: 49%;
     margin-left: 10px;
@@ -335,14 +344,15 @@ a:active, a:hover {
 }
 .inside-console {
     color: steelblue;
-    width: 49%;
+    width: 100%;
+    padding: 5px;
 }
 
-#textareaCode {
+.textareaCode {
     background-color: #ffffff;
     font-family: consolas,"courier new",monospace;
-    font-size: 15px;
-    height: 100%;
+    font-size: 14px;
+    height: 90%;
     width: 100%;
     padding: 8px;
     resize: none;
