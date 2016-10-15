@@ -10,6 +10,21 @@ $( document ).ready(function() {
         .replace(/\"(.+?)\"/g, "<span style='color: forestgreen;'><b>\"$1\"</b></span>")
         .replace(/\&gt;(.+?)\&lt;/g, "&gt;<span style='color: black;'>$1</span>&lt;");
     body.html(text);
+    var result = $('div.inside-console:eq(0)').text().split('\n');
+    var num = 0;
+    $.each(result, function( index, value ) {
+        if (index == 0){} else {
+            num += index + '<br>';
+            if (num == '01<br>') {
+                num = num.replace('0', '');
+                $('.numeric-block').html(num);
+                console.log(num.replace('0', ''))
+            } else {
+                $('.numeric-block').html(num);
+            }
+        }
+
+    });
 
     /*Цвет для селекторов CSS*/
     var body = $('div.inside-console:eq(1)');
@@ -34,10 +49,14 @@ $( document ).ready(function() {
 
 /*Увеличить тень одного из 4х боксов урока*/
 $('.block-console-result').mouseover(function () {
-    $(this).css('box-shadow', '0px 4px 19px -4px rgba(0,0,0,0.65)')
+    $(this).css('box-shadow', '0px 4px 19px -4px rgba(0,0,0,0.85)')
+    $(this).css('-moz-box-shadow', '0px 4px 19px -4px rgba(0,0,0,0.85)')
+    $(this).css('-webkit-box-shadow', '0px 4px 19px -4px rgba(0,0,0,0.85)')
 })
 
 /*Вернуть в исходное состояние тень одного из 4х боксов урока*/
 $('.block-console-result').mouseout(function () {
     $(this).css('box-shadow', '')
+    $(this).css('-moz-box-shadow', '')
+    $(this).css('-webkit-box-shadow', '')
 })

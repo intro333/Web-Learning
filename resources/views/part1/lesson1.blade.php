@@ -8,6 +8,7 @@
     <div class="main-blok">
         <div class="block-console-result">
             <div class="descrption">HTML</div>
+            <div class="numeric-block"></div>
             <div class="inside-console">
                 &lt;label&gt;Меняем цвет квадрата при наведении курсора&lt;/label&gt;<br />
                 &lt;div class="box-container"&gt;<br />
@@ -94,7 +95,7 @@
     </div>
 
     <hr>
-    {{--@include('includes.nextOrPrevLesson')--}}
+    @include('includes.nextOrPrevLesson')
 
     <!--Part 1 Подключаем стили и сценарии для этого урока-->
     <link rel="stylesheet" href="/css/part1/lesson1.css">

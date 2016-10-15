@@ -37,7 +37,9 @@
     //Для nextOrPrevLesson
     $(document).on('click', '.previous-button', function () {
         var lessonNumber = parseInt($('.lesson-number').text().replace('Урок ', '')) - 1;
-        if (lessonNumber == '0'){} else {
+        if (lessonNumber == '0'){
+            $('.previous-button').css('background', 'darkseagreen')
+        } else {
             window.location.href = '/startLesson/1/' + lessonNumber;
         }
     });
