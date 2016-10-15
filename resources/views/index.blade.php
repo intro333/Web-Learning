@@ -8,7 +8,7 @@
     <script>
 
         /*Отключаем контейнер на главной странице, чтобы слайд был на весь экран и без отступов*/
-        $('.container').removeClass();
+//        $('.container').removeClass();
 
     </script>
 @endsection

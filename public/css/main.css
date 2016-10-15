@@ -26,7 +26,10 @@ hr {
     color: #808080; /* Цвет линии для остальных браузеров */
     background-color: #808080; /* Цвет линии для браузера Firefox и Opera */
     height: 1px; /* Толщина линии */
-    /*width: 50%;*/
+    width: 90%;
+}
+tab {
+    padding-left: 20px;
 }
 /*END Переопределённые-------------------------------------------------------------------------*/
 
@@ -313,31 +316,25 @@ a:active, a:hover {
     font-size: 14px;
     position: relative;
 }
-.block-console-left {
-    border: 2px solid #e8e8e8;
-    position: relative;
-    height: 300px;
-    float: left;
-    width: 49%;
-    margin-left: 10px;
-    margin-top: 10px;
-}
 .block-console-result {
-    border: 2px solid #e8e8e8;
+    border: 3px solid #C0C0C0;
     position: relative;
     overflow-y: scroll;
     overflow-x: hidden;
     height: 300px;
     float: left;
-    width: 49%;
-    margin-left: 10px;
-    margin-top: 10px;
+    width: 47%;
+    margin-left: 15px;
+    margin-top: 15px;
+    /*-webkit-box-shadow: 0px 4px 9px -4px rgba(0,0,0,0.65);*/
+    /*-moz-box-shadow: 0px 4px 9px -4px rgba(0,0,0,0.65);*/
+    box-shadow: 0px 4px 9px -4px rgba(0,0,0,0.75);
 }
 .descrption {
     margin: 0px;
     width: 100%;
     height: 30px;
-    background:#e8e8e8;
+    background:#C0C0C0;
     padding: 4px;
     color: #696969;
     font-weight: bold;

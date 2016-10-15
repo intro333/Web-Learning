@@ -47,15 +47,14 @@
     });
 
     /*
-    * Слайдер на главной странице.При загрузке страницы выставляется интервал прокрутки слайдов
+    * Действия при загрузке страницы
     */
     $( document ).ready(function() {
+        /*Слайдер на главной странице.При загрузке страницы выставляется интервал прокрутки слайдов*/
         $('.carousel').carousel({
             interval: 5000,
             pause: false
         });
-        /*Цвет для тегов*/
-        console.log($('textarea:eq(0)').val());
     });
 
     //Scroll by Max
@@ -110,4 +109,3 @@
     $(document).on('mouseout', '.navbar-header', function () {
         $('.www-logo-image').attr('src', '/images/www-logo.jpg');
     });
-
