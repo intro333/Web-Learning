@@ -28,6 +28,7 @@
 
         <div class="block-console-result">
             <div class="descrption">CSS</div>
+            <div class="numeric-block"></div>
             <div class="inside-console">
                 .box-container {<br />
                 <tab>width: 100%;</tab><br />
@@ -78,14 +79,14 @@
             <div class="descrption">Результат</div>
             <div class="inside-console">
             <label>Меняем цвет квадрата при наведении курсора</label>
-            <div class="box-container">
+            <div class="container">
                 <div class="square"></div>
                 <div class="square"></div>
                 <div class="square"></div>
             </div>
 
              <label>Меняем цвет круга по клику</label>
-            <div class="box-container">
+            <div class="container">
                 <div class="circle"></div>
                 <div class="circle"></div>
                 <div class="circle"></div>

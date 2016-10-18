@@ -1,0 +1,56 @@
+/*****ADAPTIVE for footer******/
+@media (min-width: 1025px) {
+    .footer__social__item:hover {
+        opacity: 0.8; } }
+
+@media (max-width: 1023px) {
+    .menu--footer {
+        bottom: 70px;
+        padding: 45px 0 0 0; }
+    .b-footer .b-search {
+        bottom: 0; }
+    .footer__copy {
+        margin-left: 35px; }
+    .footer__social {
+        margin-right: 35px; } }
+
+@media (max-width: 767px) {
+    .b-menu {
+        height: auto;
+    }
+
+    .menu_footer {
+        flex-wrap: wrap;
+        padding: 15px 0 15px 15px;
+    }
+
+    .footer__copy {
+        padding-left: 15px;
+        margin-left: 10px !important;
+        float: none;
+    }
+
+    .footer__social {
+        float: none;
+        padding: 10px 0 10px 25px;
+    }
+
+    .menu__item_footer {
+        height: auto;
+    }
+
+    .menu__item__link_footer {
+        line-height: 1.2;
+        font-family: ToyotaText-Reg;
+        text-decoration: underline;
+        font-size: 13px;
+        padding: 5px 0;
+
+    }
+
+    .b-footer__bottom {
+        line-height: 1 !important;
+        height: 100px
+    }
+}
+/***** END! ADAPTIVE for footer END!******/

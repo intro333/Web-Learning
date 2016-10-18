@@ -97,62 +97,6 @@ tab {
 #footer .b-order {
     bottom: 140px; }
 
-@media (min-width: 1025px) {
-    .footer__social__item:hover {
-        opacity: 0.8; } }
-
-/*****ADAPTIVE******/
-@media (max-width: 1023px) {
-    .menu--footer {
-        bottom: 70px;
-        padding: 45px 0 0 0; }
-    .b-footer .b-search {
-        bottom: 0; }
-    .footer__copy {
-        margin-left: 35px; }
-    .footer__social {
-        margin-right: 35px; } }
-
-@media (max-width: 767px) {
-    .b-menu {
-        height: auto;
-    }
-
-    .menu_footer {
-        flex-wrap: wrap;
-        padding: 15px 0 15px 15px;
-    }
-
-    .footer__copy {
-        padding-left: 15px;
-        margin-left: 10px !important;
-        float: none;
-    }
-
-    .footer__social {
-        float: none;
-        padding: 10px 0 10px 25px;
-    }
-
-    .menu__item_footer {
-        height: auto;
-    }
-
-    .menu__item__link_footer {
-        line-height: 1.2;
-        font-family: ToyotaText-Reg;
-        text-decoration: underline;
-        font-size: 13px;
-        padding: 5px 0;
-
-    }
-
-    .b-footer__bottom {
-        line-height: 1 !important;
-        height: 100px
-    }
-}
-
 /*additions*/
 .menu_footer {
     display: -ms-flexbox;
@@ -340,7 +284,7 @@ a:active, a:hover {
     overflow-x: hidden;
     height: 300px;
     float: left;
-    width: 47%;
+    width: 48%;
     margin-left: 15px;
     margin-top: 15px;
     -webkit-box-shadow: 0px 4px 9px -4px rgba(0,0,0,0.75);
@@ -364,7 +308,7 @@ a:active, a:hover {
 
 .numeric-block {
     float: left;
-    background: #C0C0C0;
+    background: #DCDCDC;
     width: 25px;
     height: 100%;
     padding-top: 4px;

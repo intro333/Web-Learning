@@ -17,13 +17,11 @@ $( document ).ready(function() {
             num += index + '<br>';
             if (num == '01<br>') {
                 num = num.replace('0', '');
-                $('.numeric-block').html(num);
-                console.log(num.replace('0', ''))
+                $('.numeric-block:eq(0)').html(num);
             } else {
-                $('.numeric-block').html(num);
+                $('.numeric-block:eq(0)').html(num);
             }
         }
-
     });
 
     /*Цвет для селекторов CSS*/

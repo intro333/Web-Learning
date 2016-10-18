@@ -16,6 +16,7 @@
     <script src="/js/app.js"></script>
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/adaptive.css">
 
     <!-- tree sources -->
     <link href="/css/bootstrap-treeview.min.css" rel="stylesheet">
