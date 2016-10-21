@@ -10,6 +10,7 @@ $( document ).ready(function() {
         .replace(/\"(.+?)\"/g, "<span style='color: forestgreen;'><b>\"$1\"</b></span>")
         .replace(/\&gt;(.+?)\&lt;/g, "&gt;<span style='color: black;'>$1</span>&lt;");
     body.html(text);
+    //Пронумеровать каждую строчку в numeric-block
     var result = $('div.inside-console:eq(0)').text().split('\n');
     var num = 0;
     $.each(result, function( index, value ) {
@@ -31,6 +32,20 @@ $( document ).ready(function() {
         .replace(/\#(.+?)\;/g, "<span style='color: forestgreen;'><b>#$1;</b></span>")
         .replace(/(px)/g, "<b>$1</b>")
     body.html(text);
+    //Пронумеровать каждую строчку в numeric-block
+    var result = $('div.inside-console:eq(1)').text().split('\n');
+    var num = 0;
+    $.each(result, function( index, value ) {
+        if (index == 0){} else {
+            num += index + '<br>';
+            if (num == '01<br>') {
+                num = num.replace('0', '');
+                $('.numeric-block:eq(1)').html(num);
+            } else {
+                $('.numeric-block:eq(1)').html(num);
+            }
+        }
+    });
 
     /*Цвет для селекторов Jquery*/
     var body = $('div.inside-console:eq(2)');
@@ -43,6 +58,20 @@ $( document ).ready(function() {
         .replace(/(function)/g, "<span style='color: #0000CD;'><b>$1</b></span>")
         .replace(/(var)/g, "<span style='color: #0000CD;'><b>$1</b></span>")
     body.html(text);
+    //Пронумеровать каждую строчку в numeric-block
+    var result = $('div.inside-console:eq(2)').text().split('\n');
+    var num = 0;
+    $.each(result, function( index, value ) {
+        if (index == 0){} else {
+            num += index + '<br>';
+            if (num == '01<br>') {
+                num = num.replace('0', '');
+                $('.numeric-block:eq(2)').html(num);
+            } else {
+                $('.numeric-block:eq(2)').html(num);
+            }
+        }
+    });
 });
 
 /*Увеличить тень одного из 4х боксов урока*/

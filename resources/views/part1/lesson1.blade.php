@@ -30,14 +30,6 @@
             <div class="descrption">CSS</div>
             <div class="numeric-block"></div>
             <div class="inside-console">
-                .box-container {<br />
-                <tab>width: 100%;</tab><br />
-                <tab>padding-right: 15px;</tab><br />
-                <tab>padding-left: 15px;</tab><br />
-                <tab>margin-right: auto;</tab><br />
-                <tab>margin-left: auto;</tab><br />
-                }<br />
-                <br />
                 .square {<br />
                 <tab>width:110px;</tab><br />
                 <tab>height:100px;</tab><br />
@@ -62,6 +54,7 @@
 
         <div class="block-console-result">
             <div class="descrption">JQuery</div>
+            <div class="numeric-block"></div>
             <div class="inside-console">
                 /*Меняем цвет квадрата при наведении курсора*/<br />
                 $(document).on("mouseover", ".square", function () {<br />
