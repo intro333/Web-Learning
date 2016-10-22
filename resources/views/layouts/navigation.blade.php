@@ -5,6 +5,7 @@
             <a href="/"><img class="www-logo-image" src="/images/www-logo.jpg" style="width: 65px;height: 40px;margin: 5px"></a>
         </div>
         <ul class="nav navbar-nav">
+            <li><a href="/admin/panel">Админ Панель</a></li>
             <li><a href="#">Компоненты</a></li>
             <li><a href="#">О проекте</a></li>
             <li><a href="#">Контакты</a></li>

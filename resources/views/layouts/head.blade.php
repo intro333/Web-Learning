@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/adaptive.css">
+    <link rel="stylesheet" href="/css/admin/admin.main.css">
 
     <!-- tree sources -->
     <link href="/css/bootstrap-treeview.min.css" rel="stylesheet">

@@ -17,7 +17,7 @@ class AuthController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/panel';
+    protected $redirectTo = 'admin/panel';
     protected $guard = 'admin';
 
     protected $loginView = 'admin.auth.login';
