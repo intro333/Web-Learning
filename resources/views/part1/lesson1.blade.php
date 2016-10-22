@@ -3,7 +3,7 @@
 
     <h2 class="lesson-number">Урок 1</h2>
 
-    <label class="lesson-number">Описание: Изменяем цвет фигур при наведении и клике мыши.</label>
+    <label class="lesson-number">Тема: Изменяем цвет фигур при наведении и клике мыши.</label>
 
     <div class="main-blok">
         <div class="block-console-result">
