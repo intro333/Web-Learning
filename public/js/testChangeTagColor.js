@@ -4,7 +4,7 @@
 $( document ).ready(function() {
     /*Цвет для тегов HTML*/
     var body = $('div.inside-console:eq(0)');
-    var text = body.text().replace(/(class=)/g, "<span style='color: #2F4F4F;'><b>$1</b></span>")
+    var text = body.html().replace(/(class=)/g, "<span style='color: #2F4F4F;'><b>$1</b></span>")
         .replace(/(div)/g, "<b>$1</b>")
         .replace(/(label)/g, "<b>$1</b>")
         .replace(/\"(.+?)\"/g, "<span style='color: forestgreen;'><b>\"$1\"</b></span>")
@@ -27,8 +27,7 @@ $( document ).ready(function() {
 
     /*Цвет для селекторов CSS*/
     var body = $('div.inside-console:eq(1)');
-    console.log(body.html())
-    var text = body.text().replace(/\.(.+?)\ /g, "<b>.$1 </b>")
+    var text = body.html().replace(/\.(.+?)\ /g, "<b>.$1 </b>")
         .replace(/\:(.+?)\;/g, "<span style='color: forestgreen;'>:$1;</span>")
         .replace(/\#(.+?)\;/g, "<span style='color: forestgreen;'><b>#$1;</b></span>")
         .replace(/(px)/g, "<b>$1</b>")
@@ -50,7 +49,7 @@ $( document ).ready(function() {
 
     /*Цвет для селекторов Jquery*/
     var body = $('div.inside-console:eq(2)');
-    var text = body.text().replace(/(document)/g, "<span style='color: #4B0082;'><b>$1</b></span>")
+    var text = body.html().replace(/(document)/g, "<span style='color: #4B0082;'><b>$1</b></span>")
         .replace(/\"(.+?)\"/g, "'<span style='color: forestgreen;'>$1</span>'")
         .replace(/\/\*(.+?)\*\//g, "<span style='color: #808080;'>/*$1*/</span>")
         .replace(/\)\.(.+?)\(/g, ").<span style='color: #CD853F;'>$1</span>(")

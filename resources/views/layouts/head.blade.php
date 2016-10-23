@@ -14,10 +14,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     {{--app scripts--}}
     <script src="/js/app.js"></script>
+    <link rel="stylesheet" href="/css/admin/admin.main.css">
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/adaptive.css">
-    <link rel="stylesheet" href="/css/admin/admin.main.css">
+
 
     <!-- tree sources -->
     <link href="/css/bootstrap-treeview.min.css" rel="stylesheet">

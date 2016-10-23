@@ -6,6 +6,7 @@
         </div>
         <ul class="nav navbar-nav">
             <li><a href="/admin/panel">Админ Панель</a></li>
+            <li><a href="/startLesson/testLesson">Test Lesson</a></li>
             <li><a href="#">Компоненты</a></li>
             <li><a href="#">О проекте</a></li>
             <li><a href="#">Контакты</a></li>

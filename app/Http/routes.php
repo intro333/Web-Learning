@@ -14,6 +14,7 @@
 
     Route::auth();
     Route::get('/', 'LessonsController@index');
+    Route::get('/startLesson/testLesson', 'LessonsController@testLesson');
     Route::get('/startLesson/{part}/{lesson}', 'LessonsController@startLesson');
 
 
@@ -27,9 +28,12 @@ Route::post('admin/login', 'Admin\AuthController@login');
 Route::get('admin/logout', 'Admin\AuthController@logout');
 Route::get('admin/panel', 'Admin\AdminController@index');
 Route::get('admin/addLesson', 'Admin\AdminController@showAddLesson');
-Route::get('admin/editLesson', 'Admin\AdminController@showEditLesson');
+Route::get('admin/editLessons', 'Admin\AdminController@showEditLessons');
 Route::get('admin/removeLesson', 'Admin\AdminController@showRemoveLesson');
+Route::get('admin/editLesson/{part}/{lesson}', 'Admin\AdminController@showRemoveLesson');
 Route::post('admin/addLesson', 'Admin\AdminController@addLesson');
+Route::post('admin/removeLesson', 'Admin\AdminController@removeLesson');
+Route::post('admin/editLesson', 'Admin\AdminController@editLesson');
 
 /*!!!Регистрацию для админа включать только, чтобы добавить пользователя!!!*/
 //Route::get('admin/register', 'Admin\AuthController@showRegistrationForm');

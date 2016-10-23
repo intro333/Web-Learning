@@ -38,7 +38,7 @@
     $(document).on('click', '.previous-button', function () {
         var lessonNumber = parseInt($('.lesson-number').text().replace('Урок ', '')) - 1;
         if (lessonNumber == '0'){
-            $('.previous-button').css('background', 'darkseagreen')
+            $('.previous-button').css('background', '#2F4F4F')
         } else {
             window.location.href = '/startLesson/1/' + lessonNumber;
         }
