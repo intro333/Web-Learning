@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateLessonsTable extends Migration
+class Create3LessonsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -16,10 +16,11 @@ class CreateLessonsTable extends Migration
             $table->increments('id');
             $table->integer('num');
             $table->string('theme');
-            $table->string('description');
-            $table->string('text_html');
-            $table->string('text_css');
-            $table->string('text_jquery');
+            $table->text('description');
+            $table->text('text_html');
+            $table->text('text_css');
+            $table->text('text_jquery');
+            $table->timestamps();
         });
     }
 

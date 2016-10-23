@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Lesson;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -19,8 +20,14 @@ class AdminController extends Controller
         return view('admin.panel');
     }
 
-    public function addLesson()
+    public function showAddLesson()
     {
         return view('admin.addLesson');
+    }
+
+    public function addLesson(Request $request)
+    {
+//        dd($request->all());
+        Lesson::create($request->all());
     }
 }

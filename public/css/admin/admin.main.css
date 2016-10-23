@@ -38,7 +38,16 @@
     margin-top: -50px;
     margin-left: 140px;
 }
-
+.container {
+    margin-bottom: 40px;
+}
+.btn-default {
+    background-color: #2e6da4;
+    background: #2e6da4;
+    text-shadow: none;
+    font-weight: bold;
+    color: #fff;
+}
 /*
 * Постояные стили для лекций
 */
@@ -54,6 +63,7 @@
     font-size: 14px;
     position: relative;
     width: 100%;
+    margin-bottom: 10px;
 }
 .admin-block-console-result {
     border: 3px solid #C0C0C0;
@@ -63,7 +73,7 @@
     height: 300px;
     float: left;
     width: 48%;
-    margin-left: 15px;
+    margin-right: 15px;
     margin-top: 15px;
     -webkit-box-shadow: 0px 4px 9px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 4px 9px -4px rgba(0,0,0,0.75);
@@ -83,15 +93,6 @@
     width: 100%;
     padding: 5px;
 }
-
-/*.numeric-block {*/
-    /*float: left;*/
-    /*background: #DCDCDC;*/
-    /*width: 25px;*/
-    /*min-height: 100%;*/
-    /*padding-top: 4px;*/
-    /*padding-left: 2px;*/
-/*}*/
 
 .admin-textareaCode {
     background-color: #ffffff;

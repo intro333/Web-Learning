@@ -18,12 +18,12 @@
     </ul>
 </div>
 <div class="container">
-    <div class="row">
+    {{--<div class="row">--}}
         {{--<h2>Left side Navigation bar (Fixed)</h2>--}}
 
         {{--<p>Left side Navigation</p>--}}
         {{--<div class="container">--}}
             @yield('admin-content')
         {{--</div>--}}
-    </div>
+    {{--</div>--}}
 </div>
