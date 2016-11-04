@@ -25,7 +25,7 @@ class LessonsController extends Controller
 
     public function startLesson($part, $lesson) {
 
-        $showLesson = Lesson::where('num', 2)->get();
+        $showLesson = Lesson::where('num', 1)->get();
 //        dd($showLesson[0]['theme']);
         return view('part'.$part.'.lesson'.$lesson, compact('showLesson'));
     }

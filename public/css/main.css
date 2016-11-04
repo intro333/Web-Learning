@@ -286,6 +286,9 @@ a:active, a:hover {
 .lesson-number {
     margin-left: 20px;
 }
+.main-description {
+    margin-left: 20px;
+}
 .main-blok {
     display: inline-block;
     height: 100%;

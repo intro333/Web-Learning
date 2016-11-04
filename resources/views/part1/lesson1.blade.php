@@ -1,10 +1,11 @@
 @extends('app')
 @section('content')
 
-    <h2 class="lesson-number">Урок 1</h2>
+    <h2 class="lesson-number">Урок {!! $showLesson[0]['num'] !!}</h2>
 
     <label class="lesson-number">Тема: {{$showLesson[0]['theme']}}<!--Изменяем цвет фигур при наведении и клике мыши.--></label>
 
+    <p class="main-description"><b>Описание: </b><span>{{$showLesson[0]['description']}}</span></p>
     <div class="main-blok">
         <div class="block-console-result">
             <div class="descrption">HTML</div>

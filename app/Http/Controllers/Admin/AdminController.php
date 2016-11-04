@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Lesson;
 use Illuminate\Http\Request;
-
+use Carbon\Carbon;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -49,17 +49,42 @@ class AdminController extends Controller
         return redirect('/admin/removeLesson');
     }
 
-    //Шаблон для редактирования лекций
+    //Шаблон.Выбор лекции для редактирования
     public function showEditLessons()
     {
         $lessons = Lesson::all();
         return view('admin.editLessons', compact('lessons'));
     }
 
-    //Редактируем лекцию в базе данных
-    public function editLesson(Request $request)
+    //Выбрать лекцию для редактирования. метод POST.
+//    public function editLessons(Request $request)
+//    {
+//        return redirect('admin/editLessons/'.$request->input('num'));
+//    }
+
+    //Шаблон, где можно отредактировать выбранную лекцию
+    public function showEditLesson($num)
     {
-        dd($request->all());
+        $lesson = Lesson::where('num', $num)->get();
+//        dd($lesson[0]['num']);
+        return view('admin.editLesson', compact('lesson'));
+    }
+
+    //Отредактировать лекцию в базе данных. метод POST
+    public function editLesson($num, Request $request)
+    {
+        $lesson = Lesson::where('num', $num);
+        $lesson->update([
+            'num'           =>  $request->input('num'),
+            'theme'         =>  $request->input('theme'),
+            'description'   =>  $request->input('description'),
+            'text_html'     =>  $request->input('text_html'),
+            'text_css'      =>  $request->input('text_css'),
+            'text_jquery'   =>  $request->input('text_jquery'),
+            'updated_at'    =>  Carbon::now()
+        ]);
+
+        return redirect('/admin/editLessons/'.$num);
     }
 
 }

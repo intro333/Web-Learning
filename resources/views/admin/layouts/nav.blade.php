@@ -7,12 +7,10 @@
                 <li><a href="/admin/editLessons">Редактировать лекцию</a></li>
                 <li><a href="/admin/removeLesson">Удалить лекцию</a></li>
                 <li class="divider"></li>
-                <li><a href="#">Sub Menu4</a></li>
-                <li><a href="#">Sub Menu5</a></li>
             </ul>
         </li>
-        <li><a href="/admin/addLesson">Добавить лекцию</a></li>
-        <li><a href="#">Link3</a></li>
+        {{--<li><a href="/admin/addLesson">Добавить лекцию</a></li>--}}
+        {{--<li><a href="#">Link3</a></li>--}}
         <li class="divider"></li>
         <li><a href="/admin/logout">Выход</a></li>
     </ul>

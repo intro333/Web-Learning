@@ -5,10 +5,11 @@ $( document ).ready(function() {
     /*Цвет для тегов HTML*/
     var body = $('div.inside-console:eq(0)');
     var text = body.text().replace(/(class=)/g, "<span style='color: #2F4F4F;'><b>$1</b></span>")
+        .replace(/\<(\/div)\>/g, "<<b>$1</b>>")//со слешом ставится выше, чем без слеша(/div)
         .replace(/(div)/g, "<b>$1</b>")
-        .replace(/(label)/g, "<b>$1</b>")
-        .replace(/\"(.+?)\"/g, "<span style='color: forestgreen;'><b>\"$1\"</b></span>")
-        .replace(/\&gt;(.+?)\&lt;/g, "&gt;<span style='color: black;'>$1</span>&lt;");
+        .replace(/\<(\/label)\>/g, "<<b>$1</b>>")
+        .replace(/\<(label)\>/g, "<<b>$1</b>>")
+        .replace(/\"(.+?)\"/g, "<span style='color: forestgreen;'><b>\"$1\"</b></span>");
     body.html(text);
     //Пронумеровать каждую строчку в numeric-block
     var result = $('div.inside-console:eq(0)').text().split('\n');
@@ -27,7 +28,7 @@ $( document ).ready(function() {
 
     /*Цвет для селекторов CSS*/
     var body = $('div.inside-console:eq(1)');
-    console.log(body.html())
+    // console.log(body.html())
     var text = body.text().replace(/\.(.+?)\ /g, "<b>.$1 </b>")
         .replace(/\:(.+?)\;/g, "<span style='color: forestgreen;'>:$1;</span>")
         .replace(/\#(.+?)\;/g, "<span style='color: forestgreen;'><b>#$1;</b></span>")
@@ -73,6 +74,11 @@ $( document ).ready(function() {
             }
         }
     });
+
+    //Описание в уроке.main-description
+    var body = $('p.main-description span');
+    var text = body.text()
+    body.html(text);
 });
 
 /*Увеличить тень одного из 4х боксов урока*/

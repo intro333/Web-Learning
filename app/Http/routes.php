@@ -22,18 +22,27 @@
 //
 //});
 
-/*Админка*/
+/*
+ * Админка
+*/
 Route::get('admin/login', 'Admin\AuthController@showLoginForm');
 Route::post('admin/login', 'Admin\AuthController@login');
 Route::get('admin/logout', 'Admin\AuthController@logout');
 Route::get('admin/panel', 'Admin\AdminController@index');
+//Добавление лекций
 Route::get('admin/addLesson', 'Admin\AdminController@showAddLesson');
-Route::get('admin/editLessons', 'Admin\AdminController@showEditLessons');
-Route::get('admin/removeLesson', 'Admin\AdminController@showRemoveLesson');
-Route::get('admin/editLesson/{part}/{lesson}', 'Admin\AdminController@showRemoveLesson');
 Route::post('admin/addLesson', 'Admin\AdminController@addLesson');
+//Редактирование лекций
+Route::get('admin/editLessons', 'Admin\AdminController@showEditLessons');//показать все лекции
+Route::get('admin/editLessons/{lesson}', 'Admin\AdminController@showEditLesson');//показать одну лекцию по номеру
+Route::post('admin/editLessons/{lesson}', 'Admin\AdminController@showEditLesson');//POST запрос на лекцию по номеру
+Route::post('admin/editLesson/{lesson}', 'Admin\AdminController@editLesson');//POST запрос на update лекции в базе данных
+//Удаление лекций
+Route::get('admin/removeLesson', 'Admin\AdminController@showRemoveLesson');
 Route::post('admin/removeLesson', 'Admin\AdminController@removeLesson');
-Route::post('admin/editLesson', 'Admin\AdminController@editLesson');
+
+
+
 
 /*!!!Регистрацию для админа включать только, чтобы добавить пользователя!!!*/
 //Route::get('admin/register', 'Admin\AuthController@showRegistrationForm');

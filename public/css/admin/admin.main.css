@@ -71,8 +71,8 @@
     overflow-y: hidden;
     overflow-x: hidden;
     height: 300px;
-    float: left;
-    width: 48%;
+    /*float: inherit;*/
+    width: 90%;
     margin-right: 15px;
     margin-top: 15px;
     -webkit-box-shadow: 0px 4px 9px -4px rgba(0,0,0,0.75);
