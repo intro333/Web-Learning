@@ -79,6 +79,10 @@ $( document ).ready(function() {
     var body = $('p.main-description span');
     var text = body.text()
     body.html(text);
+
+    var body = $('div.inside-console:eq(3)');
+    body.html(body.text());
+    console.log(body.text())
 });
 
 /*Увеличить тень одного из 4х боксов урока*/

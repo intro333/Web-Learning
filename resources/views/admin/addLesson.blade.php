@@ -6,8 +6,10 @@
 
     <form method="POST" action="/admin/addLesson">
         <input type="hidden" name="_token" id="_token" value="{{ csrf_token() }}">
-        <label for="num">Номер лекции</label>
-        <input name="num" class="input-group" required>
+        <label for="part">Номер части</label>
+        <input name="part" class="input-group" required>
+        <label for="lesson">Номер лекции</label>
+        <input name="lesson" class="input-group" required>
         <label for="theme">Тема</label>
         <input name="theme" class="input-group form-control" required>
         <label for="description">Описание</label>
@@ -27,6 +29,11 @@
             <div class="admin-block-console-result">
                 <div class="admin-descrption">Jquery</div>
                 <textarea name="text_jquery" class="admin-textareaCode" required></textarea>
+            </div>
+
+            <div class="admin-block-console-result">
+                <div class="admin-descrption">Результат</div>
+                <textarea name="text_result" class="admin-textareaCode" required></textarea>
             </div>
         </div>
 

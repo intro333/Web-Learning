@@ -30,6 +30,7 @@ class AdminController extends Controller
     //Добавляем лекцию в базу lessons методом POST
     public function addLesson(Request $request)
     {
+//        dd($request->all());
         Lesson::create($request->all());
         return redirect('/admin/addLesson');
     }
@@ -44,47 +45,42 @@ class AdminController extends Controller
     //Удаляем лекцию из базы lessons методом POST
     public function removeLesson(Request $request)
     {
-        $lesson = Lesson::where('num', $request->input('num'))->get();
+        $lesson = Lesson::where('part', $request->input('part'))->where('lesson', $request->input('lesson'))->get();
         $lesson->first()->delete();
         return redirect('/admin/removeLesson');
     }
 
-    //Шаблон.Выбор лекции для редактирования
+    //Шаблон.Выбор лекции для редактирования и Выбрать лекцию для редактирования. метод POST.
     public function showEditLessons()
     {
         $lessons = Lesson::all();
         return view('admin.editLessons', compact('lessons'));
     }
 
-    //Выбрать лекцию для редактирования. метод POST.
-//    public function editLessons(Request $request)
-//    {
-//        return redirect('admin/editLessons/'.$request->input('num'));
-//    }
-
     //Шаблон, где можно отредактировать выбранную лекцию
-    public function showEditLesson($num)
+    public function showEditLesson($part, $lesson)
     {
-        $lesson = Lesson::where('num', $num)->get();
-//        dd($lesson[0]['num']);
+        $lesson = Lesson::where('part', $part)->where('lesson', $lesson)->get();
         return view('admin.editLesson', compact('lesson'));
     }
 
     //Отредактировать лекцию в базе данных. метод POST
-    public function editLesson($num, Request $request)
+    public function editLesson($part, $numLesson, Request $request)
     {
-        $lesson = Lesson::where('num', $num);
+        $lesson = Lesson::where('part', $part)->where('lesson', $numLesson);
         $lesson->update([
-            'num'           =>  $request->input('num'),
+            'part'          =>  $request->input('part'),
+            'lesson'        =>  $request->input('lesson'),
             'theme'         =>  $request->input('theme'),
             'description'   =>  $request->input('description'),
             'text_html'     =>  $request->input('text_html'),
             'text_css'      =>  $request->input('text_css'),
             'text_jquery'   =>  $request->input('text_jquery'),
+            'text_result'   =>  $request->input('text_result'),
             'updated_at'    =>  Carbon::now()
         ]);
 
-        return redirect('/admin/editLessons/'.$num);
+        return redirect('/admin/editLessons/' . $part . '/' . $numLesson);
     }
 
 }

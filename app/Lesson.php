@@ -8,11 +8,13 @@ class Lesson extends Model
 {
     protected $fillable = [
         'id',
-        'num',
+        'part',
+        'lesson',
         'theme',
         'description',
         'text_html',
         'text_css',
         'text_jquery',
+        'text_result',
     ];
 }

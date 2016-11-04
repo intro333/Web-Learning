@@ -133,7 +133,8 @@ tab {
     border-radius: 2px;
     color: #F5F5F5;
     font-weight: bold;
-    background: #2F4F4F;
+    background: #2e6da4;
+    background-color: #2e6da4;
     margin-bottom: 20px;
     text-shadow: none;
 }
@@ -146,14 +147,16 @@ tab {
     border-radius: 2px;
     color: #F5F5F5;
     font-weight: bold;
-    background: #2F4F4F;
+    background: #2e6da4;
+    background-color: #2e6da4;
     margin-bottom: 20px;
     text-shadow: none;
 
 }
 .previous-button:hover {
     text-shadow: none;
-    background-color: #2e6da4;
+    background-color: #2F4F4F;
+    background: #2F4F4F;
     color: #fff;
     -webkit-box-shadow: 0px 0px 19px -2px rgba(97,97,97,1);
     -moz-box-shadow: 0px 0px 19px -2px rgba(97,97,97,1);
@@ -161,11 +164,27 @@ tab {
 }
 .next-button:hover {
     text-shadow: none;
-    background-color: #2e6da4;
+    background-color: #2F4F4F;
+    background: #2F4F4F;
     color: #F5F5F5;
     -webkit-box-shadow: 0px 0px 19px -2px rgba(97,97,97,1);
     -moz-box-shadow: 0px 0px 19px -2px rgba(97,97,97,1);
     box-shadow: 0px 0px 19px -2px rgba(97,97,97,1);
+}
+.button_off {
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 2px;
+    color: #F5F5F5;
+    font-weight: bold;
+    background: #2e6da4;
+    background-color: #2e6da4;
+    margin-bottom: 20px;
+    text-shadow: none;
+}
+.button_off:hover {
+    color: #ffffff;
 }
 /*
 * Текст и кнопка на слайдере главной страницы
@@ -353,4 +372,11 @@ textarea {
 button, input, select, textarea {
     font: inherit;
     margin: 0;
+}
+
+.part-number {
+    float: right;
+    margin-top: 0;
+    margin-right: 20px;
+    color: #D3D3D3;
 }

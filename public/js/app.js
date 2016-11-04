@@ -9,7 +9,7 @@
         } else if (  lesson == ''){
             $('#nav-lesson').css('border', '1px solid #b22222');
         }  else {
-            window.location.href = '/startLesson/' + part + '/' + lesson;
+            window.location.href = '/lessons/' + part + '/' + lesson;
         }
     });
 
@@ -32,20 +32,6 @@
     });
     $(document).on('mouseup', '#nav-lesson', function () {
         $(this).css('border', '');
-    });
-
-    //Для nextOrPrevLesson
-    $(document).on('click', '.previous-button', function () {
-        var lessonNumber = parseInt($('.lesson-number').text().replace('Урок ', '')) - 1;
-        if (lessonNumber == '0'){
-            $('.previous-button').css('background', '#2F4F4F')
-        } else {
-            window.location.href = '/startLesson/1/' + lessonNumber;
-        }
-    });
-    $(document).on('click', '.next-button', function () {
-        var lessonNumber = parseInt($('.lesson-number').text().replace('Урок ', '')) + 1;
-        window.location.href = '/startLesson/1/' + lessonNumber;
     });
 
     /*
@@ -101,7 +87,7 @@
 
      /*Кнопка на слайдере главной страницы*/
      $(document).on('click', '.button-slider', function () {
-         window.location.href = "/startLesson/1/1";
+         window.location.href = "/lessons/1/1";
      });
 
     /*Подсветить www-logo*/

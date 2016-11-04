@@ -1,7 +1,8 @@
 @extends('app')
 @section('content')
 
-    <h2 class="lesson-number">Урок {!! $showLesson[0]['num'] !!}</h2>
+    <h2 class="lesson-number">Урок {!! $showLesson[0]['lesson'] !!}</h2>
+    <h2 class="part-number">Часть {!! $showLesson[0]['part'] !!}</h2>
 
     <label class="lesson-number">Тема: {{$showLesson[0]['theme']}}<!--Изменяем цвет фигур при наведении и клике мыши.--></label>
 
@@ -34,19 +35,7 @@
         <div class="block-console-result">
             <div class="descrption">Результат</div>
             <div class="inside-console">
-            <label>Меняем цвет квадрата при наведении курсора</label>
-            <div class="container">
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-            </div>
-
-             <label>Меняем цвет круга по клику</label>
-            <div class="container">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </div>
+                {{$showLesson[0]['text_result']}}
             </div>
         </div>
     </div>

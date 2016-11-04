@@ -10,9 +10,11 @@
             <li type="button" class="list-group-item list-group-item-success">
                 <form method="POST" action="/admin/removeLesson">
                     <input type="hidden" name="_token" id="_token" value="{{ csrf_token() }}">
-                    <input type="hidden" name="num" value="{{$lesson['num']}}">
-                    <a class="btn btn-primary" role="button">{{$lesson['num']}}</a>&nbsp;&nbsp;
-                    <a class="btn btn-primary" role="button">{{$lesson['theme']}}</a>&nbsp;&nbsp;
+                    <input type="hidden" name="part" value="{{$lesson['part']}}">
+                    <input type="hidden" name="lesson" value="{{$lesson['lesson']}}">
+                    <a class="btn btn-primary" role="button"><b>Часть:</b> {{$lesson['part']}}</a>&nbsp;&nbsp;
+                    <a class="btn btn-primary" role="button"><b>Урок:</b> {{$lesson['lesson']}}</a>&nbsp;&nbsp;
+                    <a class="btn btn-primary" role="button"><b>Тема:</b> {{$lesson['theme']}}</a>&nbsp;&nbsp;
                     <button class="btn btn-danger" type="submit" style="float: right;">Удалить</button>
                 </form>
             </li>
