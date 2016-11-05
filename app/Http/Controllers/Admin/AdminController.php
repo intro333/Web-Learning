@@ -50,7 +50,7 @@ class AdminController extends Controller
         return redirect('/admin/removeLesson');
     }
 
-    //Шаблон.Выбор лекции для редактирования и Выбрать лекцию для редактирования. метод POST.
+    //Шаблон.GET - Показать все лекции для редактирования. POST - Выбрать лекцию для редактирования.
     public function showEditLessons()
     {
         $lessons = Lesson::all();
@@ -80,7 +80,7 @@ class AdminController extends Controller
             'updated_at'    =>  Carbon::now()
         ]);
 
-        return redirect('/admin/editLessons/' . $part . '/' . $numLesson);
+        return redirect('/admin/editLessons/' . $request->input('part') . '/' . $request->input('lesson'));
     }
 
 }

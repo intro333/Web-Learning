@@ -3,25 +3,16 @@
 
     <h2 class="lesson-number">Урок Test</h2>
 
-    <label class="lesson-number">Тема: Документ для создания шаблонов.</label>
+    <label class="lesson-number">Тема: Скрыть элемент.</label>
 
     <div class="main-blok">
         <div class="block-console-result">
             <div class="descrption">HTML</div>
             <div class="numeric-block"></div>
             <div class="inside-console">
-                &lt;label&gt;Меняем цвет квадрата при наведении курсора&lt;/label&gt;<br />
-                &lt;div class="box-container"&gt;<br />
+                &lt;label&gt;Скрыть квадрат по клику&lt;/label&gt;<br />
+                &lt;div class="container"&gt;<br />
                 <tab>&lt;div class="square"&gt;&lt;/div&gt;</tab><br />
-                <tab>&lt;div class="square"&gt;&lt;/div&gt;</tab><br />
-                <tab>&lt;div class="square"&gt;&lt;/div&gt;</tab><br />
-                &lt;/div&gt;<br />
-                <br />
-                &lt;label&gt;Меняем цвет круга по клику&lt;/label&gt;<br />
-                &lt;div class="box-container"&gt;<br />
-                <tab>&lt;div class="circle"&gt;&lt;/div&gt;</tab><br />
-                <tab>&lt;div class="circle"&gt;&lt;/div&gt;</tab><br />
-                <tab>&lt;div class="circle"&gt;&lt;/div&gt;</tab><br />
                 &lt;/div&gt;
             </div>
         </div>
@@ -37,19 +28,7 @@
                 <tab>float:left;</tab><br />
                 <tab>margin:15px;</tab><br />
                 <tab>text-align:center;</tab><br />
-                }<br />
-                <br />
-                .circle {<br />
-                <tab>float:left;</tab><br />
-                <tab>width: 100px;</tab><br />
-                <tab>height: 100px;</tab><br />
-                <tab>background: cadetblue;</tab><br />
-                <tab>-moz-border-radius: 50px;</tab><br />
-                <tab>-webkit-border-radius: 50px;</tab><br />
-                <tab>border-radius: 50px;</tab><br />
-                <tab>margin:15px;</tab><br />
                 }
-
             </div>
         </div>
 
@@ -57,34 +36,20 @@
             <div class="descrption">JQuery</div>
             <div class="numeric-block"></div>
             <div class="inside-console">
-                  /*Меняем цвет квадрата при наведении курсора*/<br />
-                  $(document).on("mouseover", ".square", function () {<br />
-                  <tab>$(this).css("background","#66CDAA")</tab><br />
-                  });<br />
-                  <br />
-                  /*Меняем цвет круга по клику*/<br />
-                  $(document).on("mouseup", ".circle", function () {<br />
-                  <tab>$(this).css("background","#FF4500")</tab><br />
-                  });
+                $(document).on('click', '.square', function () {<br />
+                <tab>$(this).slideUp()</tab><br />
+                });
             </div>
         </div>
 
         <div class="block-console-result">
             <div class="descrption">Результат</div>
             <div class="inside-console">
-                <label>Меняем цвет квадрата при наведении курсора</label>
+                <label>Скрыть квадрат по клику</label>
                 <div class="container">
                     <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
                 </div>
-
-                <label>Меняем цвет круга по клику</label>
-                <div class="container">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                </div>
+            </div>
             </div>
         </div>
     </div>
