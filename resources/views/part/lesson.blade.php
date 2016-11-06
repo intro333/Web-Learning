@@ -4,9 +4,10 @@
     <h2 class="lesson-number">Урок {!! $showLesson[0]['lesson'] !!}</h2>
     <h2 class="part-number">Часть {!! $showLesson[0]['part'] !!}</h2>
 
-    <label class="lesson-number">Тема: {{$showLesson[0]['theme']}}</label>
 
-    <p class="main-description"><b>Описание: </b><span>{{$showLesson[0]['description']}}</span></p>
+    <div class="lesson-theme"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>{{$showLesson[0]['theme']}}</div>
+
+    {{--<p class="main-description"><b>Описание: </b><span>{{$showLesson[0]['description']}}</span></p>--}}
     <div class="main-blok">
         <div class="block-console-result">
             <div class="descrption">HTML</div>

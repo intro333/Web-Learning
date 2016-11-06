@@ -34,8 +34,8 @@ Route::get('admin/addLesson', 'Admin\AdminController@showAddLesson');
 Route::post('admin/addLesson', 'Admin\AdminController@addLesson');
 //Редактирование лекций
 Route::get('admin/editLessons', 'Admin\AdminController@showEditLessons');//показать все лекции
-Route::get('admin/editLessons/{part}/{lesson}', 'Admin\AdminController@showEditLesson');//показать одну лекцию по номеру
-Route::post('admin/editLessons/{part}/{lesson}', 'Admin\AdminController@showEditLesson');//POST запрос на лекцию по номеру
+Route::get('admin/editLessons/{part}/{lesson}', 'Admin\AdminController@showEditLesson');//показать одну лекцию
+Route::post('admin/editLessons/{part}/{lesson}', 'Admin\AdminController@showEditLesson');//POST запрос.показать одну лекцию
 Route::post('admin/editLesson/{part}/{lesson}', 'Admin\AdminController@editLesson');//POST запрос на update лекции в базе данных
 //Удаление лекций
 Route::get('admin/removeLesson', 'Admin\AdminController@showRemoveLesson');

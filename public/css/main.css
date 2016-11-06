@@ -302,8 +302,19 @@ a:active, a:hover {
 /*
 * Постояные стили для лекций
 */
-.lesson-number {
+.lesson-theme {
+    border: 1px solid #2e6da4;
+    border-radius: 3px;
+    font-weight: bold;
+    background: #2e6da4;
+    background-color: #2e6da4;
+    color: white;
+    display: inline-block;
+    padding: 5px;
     margin-left: 20px;
+}
+.lesson-theme span {
+    margin-right: 8px;
 }
 .main-description {
     margin-left: 20px;
@@ -364,7 +375,6 @@ a:active, a:hover {
     width: 100%;
     padding: 5px;
 }
-
 .numeric-block {
     float: left;
     background: #DCDCDC;
@@ -374,7 +384,6 @@ a:active, a:hover {
     padding-left: 2px;
     margin-right: 5px;
 }
-
 .textareaCode {
     background-color: #ffffff;
     font-family: consolas,"courier new",monospace;
@@ -397,5 +406,6 @@ button, input, select, textarea {
     float: right;
     margin-top: 0;
     margin-right: 20px;
+    margin-left: 20px;
     color: #D3D3D3;
 }

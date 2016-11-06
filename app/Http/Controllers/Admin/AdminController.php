@@ -38,7 +38,7 @@ class AdminController extends Controller
     //Шаблон для удаления лекций
     public function showRemoveLesson()
     {
-        $lessons = Lesson::all();
+        $lessons = Lesson::orderBy('lesson')->get();
         return view('admin.removeLesson', compact('lessons'));
     }
 
@@ -50,10 +50,10 @@ class AdminController extends Controller
         return redirect('/admin/removeLesson');
     }
 
-    //Шаблон.GET - Показать все лекции для редактирования. POST - Выбрать лекцию для редактирования.
+    //Шаблон.GET - Показать все лекции для редактирования.
     public function showEditLessons()
     {
-        $lessons = Lesson::all();
+        $lessons = Lesson::orderBy('lesson')->get();
         return view('admin.editLessons', compact('lessons'));
     }
 

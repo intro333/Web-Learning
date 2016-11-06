@@ -11,7 +11,7 @@
             <li><a href="#">О проекте</a></li>
             <li><a href="#">Контакты</a></li>
             <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Найти урок <span class="caret"></span></a>
+                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Найти урок <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <li><a>
                             <label>Часть</label>
