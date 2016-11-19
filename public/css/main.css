@@ -123,6 +123,7 @@ tab {
     text-decoration: underline; }
 /*END for footer ------------------------------------*/
 
+/**/
 /*
 * Для nextOrPrevLesson
 */
@@ -322,6 +323,7 @@ a:active, a:hover {
 .main-blok {
     display: inline-block;
     height: 100%;
+    width: 100%;
     font-family: ToyotaText-Reg, 'sans-serif';
     text-align: justify;
     color: #808080;
@@ -352,7 +354,7 @@ a:active, a:hover {
     color: #696969;
     font-weight: bold;
 }
-.reset-button {
+.reset-button, .what-is-description {
     float: right;
     margin-right: 15px;
     font-size: 12px;
@@ -365,7 +367,7 @@ a:active, a:hover {
     background: #696969;
     color: #ffffff;
 }
-.reset-button:hover {
+.reset-button:hover, .what-is-description:hover {
     background-color: #A9A9A9;
     background: #A9A9A9;
     border: 1px solid #ffffff;

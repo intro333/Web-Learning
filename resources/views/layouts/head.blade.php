@@ -18,12 +18,14 @@
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/adaptive.css">
+    <link rel="stylesheet" href="/css/popup.css">
 
 
     <!-- tree sources -->
     <link href="/css/bootstrap-treeview.min.css" rel="stylesheet">
     {{--<script src="/bower_components/jquery/dist/jquery.js"></script>--}}
     <script src="/js/bootstrap-treeview.min.js"></script>
+    <script src="/js/popup.js"></script>
 
     <!--AngularJS   https://angularjs.org-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>

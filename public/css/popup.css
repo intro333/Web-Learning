@@ -1,0 +1,74 @@
+/*Close button*/
+.close-button {
+    text-align: center;
+    display: inline-block;
+    padding: 4px 8px 4px 8px;
+    border-radius: 5px;
+    color: #F5F5F5;
+    font-weight: bold;
+    background: #2e6da4;
+    background-color: #2e6da4;
+    text-shadow: none;
+}
+.close-button:hover {
+    text-shadow: none;
+    background-color: #2F4F4F;
+    background: #2F4F4F;
+    color: #fff;
+}
+/* три блока для описания*/
+#blok1 {
+    position: relative;
+    margin:95px auto 0;
+    z-index:2;
+    width:450px;
+    color: #2e6da4;
+    font-weight: bold;
+    padding:10px 20px;
+    background:#F5F5F5;
+    border:1px solid #D3D3D3;
+    box-shadow:0 0 2px rgba(0,0,0,0.5);
+    border-radius: 10px 10px 0 0 ;
+}
+#blok3 {
+    position: relative;
+    margin:0px auto;
+    z-index:2;
+    width:450px;
+    padding:10px 20px;
+    background:#F5F5F5;
+    border:1px solid #D3D3D3;
+    box-shadow:0 0 2px rgba(0,0,0,0.5);
+    border-radius: 0px 0 10px 10px ;
+}
+#blok2 {
+    position: relative;
+    margin:0px auto;
+    z-index:2;
+    width:450px;
+    padding:10px 20px;
+    background:#FFFFFF;
+    border:1px solid #D3D3D3;
+    box-shadow:0 0 2px rgba(0,0,0,0.5);
+}
+
+/*
+* Описание к блокам
+*/
+.popup_what-is-description {
+    position: absolute;
+    height:100%;
+    width:100%;
+    z-index:200000;
+    top:0;
+    left:0;
+    display:none;
+}
+.popup_what-is-description_bg {
+    background:rgba(0,0,0,0.5);
+    position:fixed;
+    z-index:1;
+    height:100%;
+    width:100%;
+    padding: 0px;
+}

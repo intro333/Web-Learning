@@ -10,7 +10,7 @@
             <div class="descrption">HTML</div>
             <div class="numeric-block"></div>
             <div class="inside-console">
-                &lt;label&gt;Скрыть квадрат по клику&lt;/label&gt;<br />
+                &lt;h5&gt;Скрыть квадрат по клику&lt;/h5&gt;<br />
                 &lt;div class="container"&gt;<br />
                 <tab>&lt;div class="square"&gt;&lt;/div&gt;</tab><br />
                 &lt;/div&gt;
@@ -37,7 +37,7 @@
             <div class="numeric-block"></div>
             <div class="inside-console">
                 $(document).on('click', '.square', function () {<br />
-                <tab>$(this).slideUp()</tab><br />
+                <tab>$(this).slideUp();</tab><br />
                 });
             </div>
         </div>
@@ -45,10 +45,10 @@
         <div class="block-console-result">
             <div class="descrption">Результат</div>
             <div class="inside-console">
-                <label>Скрыть квадрат по клику</label>
-                <div class="container">
+                <h5>Скрыть квадрат по клику</h5>
+                {{--<div class="container">--}}
                     <div class="square"></div>
-                </div>
+                {{--</div>--}}
             </div>
             </div>
         </div>

@@ -16,6 +16,7 @@
     Route::get('/', 'LessonsController@index');
     Route::get('/startLesson/testLesson', 'LessonsController@testLesson');
     Route::get('/lessons/{part}/{lesson}', 'LessonsController@startLesson');
+    Route::post('/lessons/getDescription', 'LessonsController@showDescription');
 
 
 //Route::group(['middleware' => ['admin']], function () {
@@ -41,8 +42,14 @@ Route::post('admin/editLesson/{part}/{lesson}', 'Admin\AdminController@editLesso
 Route::get('admin/removeLesson', 'Admin\AdminController@showRemoveLesson');
 Route::post('admin/removeLesson', 'Admin\AdminController@removeLesson');
 
-
-
+//Добавление описаний к блокам
+Route::get('admin/addDescription', 'Admin\AdminController@showAddDescription');
+Route::post('admin/addDescription', 'Admin\AdminController@addDescription');
+//Редактирование описаний
+Route::get('admin/editDescriptions', 'Admin\AdminController@showDescriptions');//показать все описания
+Route::get('admin/editDescriptions/{part}/{lesson}', 'Admin\AdminController@showDescription');//показать одно описание
+Route::post('admin/editDescriptions/{part}/{lesson}', 'Admin\AdminController@showDescription');//POST запрос.показать одно описание
+Route::post('admin/editDescription/{part}/{lesson}', 'Admin\AdminController@editDescription');//POST запрос на update описания в базе данных
 
 /*!!!Регистрацию для админа включать только, чтобы добавить пользователя!!!*/
 //Route::get('admin/register', 'Admin\AuthController@showRegistrationForm');

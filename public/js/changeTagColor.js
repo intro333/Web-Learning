@@ -7,8 +7,8 @@ $( document ).ready(function() {
     var text = body.text().replace(/(class=)/g, "<span style='color: #2F4F4F;'><b>$1</b></span>")
         .replace(/\<(\/div)\>/g, "<<b>$1</b>>")//со слешом ставится выше, чем без слеша(/div)
         .replace(/(div)/g, "<b>$1</b>")
-        .replace(/\<(\/label)\>/g, "<<b>$1</b>>")
-        .replace(/\<(label)\>/g, "<<b>$1</b>>")
+        .replace(/\<(\/h5)\>/g, "<<b>$1</b>>")
+        .replace(/\<(h5)\>/g, "<<b>$1</b>>")
         .replace(/\"(.+?)\"/g, "<span style='color: forestgreen;'><b>\"$1\"</b></span>");
     body.html(text);
     //Пронумеровать каждую строчку в numeric-block

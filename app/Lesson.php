@@ -6,6 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Lesson extends Model
 {
+
+    protected $table = 'lessons';
+
     protected $fillable = [
         'id',
         'part',
@@ -17,4 +20,9 @@ class Lesson extends Model
         'text_jquery',
         'text_result',
     ];
+
+//    public function descriptionForLessons()
+//    {
+//        return $this->hasMany('App\DescriptionForLesson');
+//    }
 }

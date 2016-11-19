@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Lesson;
+use App\DescriptionForLesson;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
 use App\Http\Requests;
@@ -81,6 +82,50 @@ class AdminController extends Controller
         ]);
 
         return redirect('/admin/editLessons/' . $request->input('part') . '/' . $request->input('lesson'));
+    }
+
+    /*------------------------------------------------------------------------------------------------------*/
+    //Шаблон для добавления описания для блоков
+    public function showaddDescription()
+    {
+        return view('admin.description.addDescription');
+    }
+
+    //Добавляем описания для блоков в базу description_for_lessons методом POST
+    public function addDescription(Request $request)
+    {
+        DescriptionForLesson::create($request->all());
+        return redirect('/admin/addDescription');
+    }
+
+    //Шаблон.GET - Показать все описания для редактирования.
+    public function showDescriptions()
+    {
+        $descriptions = DescriptionForLesson::orderBy('lesson_id')->get();
+        return view('admin.description.editDescriptions', compact('descriptions'));
+    }
+
+    //Шаблон, где можно отредактировать выбранное описание
+    public function showDescription($part, $lesson)
+    {
+        $description = DescriptionForLesson::where('part_id', $part)->where('lesson_id', $lesson)->get();
+        return view('admin.description.editDescription', compact('description'));
+    }
+
+    //Отредактировать описание в базе данных. метод POST
+    public function editDescription($part, $numLesson, Request $request)
+    {
+        $description = DescriptionForLesson::where('part_id', $part)->where('lesson_id', $numLesson);
+        $description->update([
+            'part_id'          =>  $request->input('part'),
+            'lesson_id'        =>  $request->input('lesson'),
+            'text_html'     =>  $request->input('text_html'),
+            'text_css'      =>  $request->input('text_css'),
+            'text_jquery'   =>  $request->input('text_jquery'),
+            'updated_at'    =>  Carbon::now()
+        ]);
+
+        return redirect('/admin/editDescriptions/' . $request->input('part') . '/' . $request->input('lesson'));
     }
 
 }
