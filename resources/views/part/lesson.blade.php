@@ -13,7 +13,7 @@
     <div class="main-blok">
         <div class="block-console-result">
             <div class="descrption">HTML
-                <div class="btn what-is-description" data-string="text_html">Что здесь?</div></div>
+                <div class="btn btn-lg what-is-description" data-text="HTML" data-string="text_html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></div></div>
             <div class="numeric-block"></div>
             <div class="inside-console">
                 {{$showLesson[0]['text_html']}}
@@ -22,7 +22,7 @@
 
         <div class="block-console-result">
             <div class="descrption">CSS
-                <div class="btn what-is-description" data-string="text_css">Что здесь?</div></div>
+                <div class="btn btn-lg what-is-description" data-text="CSS" data-string="text_css"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></div></div>
             <div class="numeric-block"></div>
             <div class="inside-console">
                 {{$showLesson[0]['text_css']}}
@@ -31,7 +31,7 @@
 
         <div class="block-console-result">
             <div class="descrption">JQuery
-                <div class="btn what-is-description" data-string="text_jquery">Что здесь?</div></div>
+                <div class="btn btn-lg what-is-description" data-text="JQuery" data-string="text_jquery"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></div></div>
             <div class="numeric-block"></div>
             <div class="inside-console">
                 {{$showLesson[0]['text_jquery']}}

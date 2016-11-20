@@ -54,3 +54,20 @@
     }
 }
 /***** END! ADAPTIVE for footer END!******/
+
+/*Блок с заданиями*/
+@media (max-width: 900px) {
+    .block-console-result {
+        width: 47%;
+    }
+}
+@media (max-width: 767px) {
+    .block-console-result {
+        width: 95%;
+    }
+}
+@media (max-width: 512px) {
+    .block-console-result {
+        width: 93%;
+    }
+}
