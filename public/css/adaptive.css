@@ -57,17 +57,17 @@
 
 /*Блок с заданиями*/
 @media (max-width: 900px) {
-    .block-console-result {
+    .block-lesson {
         width: 47%;
     }
 }
 @media (max-width: 767px) {
-    .block-console-result {
+    .block-lesson {
         width: 95%;
     }
 }
 @media (max-width: 512px) {
-    .block-console-result {
+    .block-lesson {
         width: 93%;
     }
 }
