@@ -376,6 +376,12 @@ a:active, a:hover {
     font-size: 14px;
     overflow: auto;
 }
+.block-console-inside span:before {
+    /*display: none;*/
+    content: attr(data-line-number);
+    background: #f1f1f1;
+    color: #C0C0C0;
+}
 /* скроллбар блока block-console-inside-----------------*/
 .block-console-inside::-webkit-scrollbar {
     width: 6px;
@@ -388,13 +394,11 @@ a:active, a:hover {
 .block-console-inside::-webkit-scrollbar-thumb {
     background-color: #D3D3D3;
 }
-/*КОНЕЦ сроллбара--------------------------------------*/
-.block-console-inside span:before {
-    /*display: none;*/
-    content: attr(data-line-number);
-    background: #f1f1f1;
-    color: #C0C0C0;
+.block-console-inside::-webkit-scrollbar-thumb:hover {
+    background-color: #808080;
 }
+/*КОНЕЦ сроллбара--------------------------------------*/
+
 /*END new style for lesson box------------------------------------------------------------------------------------*/
 
 .reset-button {
