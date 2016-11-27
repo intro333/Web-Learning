@@ -9,41 +9,45 @@
 
     <div class="lesson-theme"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>{{$showLesson[0]['theme']}}</div>
 
-    {{--<p class="main-description"><b>Описание: </b><span>{{$showLesson[0]['description']}}</span></p>--}}
     <div class="main-blok">
-        <div class="block-console-result">
-            <div class="descrption">HTML
-                <div class="btn btn-lg what-is-description" data-text="HTML" data-string="text_html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></div></div>
-            <div class="numeric-block"></div>
-            <div class="inside-console">
+        <div class="block-lesson">
+            <div class="block-lesson-child">
+                <h4 class="descrption-text">HTML
+                    <div class="btn btn-lg what-is-description" data-text="HTML" data-string="text_html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></div>
+                </h4>
+                <div class="block-console-inside">
                 {{$showLesson[0]['text_html']}}
             </div>
         </div>
+        </div>
 
-        <div class="block-console-result">
-            <div class="descrption">CSS
-                <div class="btn btn-lg what-is-description" data-text="CSS" data-string="text_css"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></div></div>
-            <div class="numeric-block"></div>
-            <div class="inside-console">
+        <div class="block-lesson">
+            <div class="block-lesson-child">
+                <h4 class="descrption-text">CSS</h4>
+                <div class="block-console-inside">
                 {{$showLesson[0]['text_css']}}
             </div>
         </div>
+        </div>
 
-        <div class="block-console-result">
-            <div class="descrption">JQuery
-                <div class="btn btn-lg what-is-description" data-text="JQuery" data-string="text_jquery"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></div></div>
-            <div class="numeric-block"></div>
-            <div class="inside-console">
+        <div class="block-lesson">
+            <div class="block-lesson-child">
+                <h4 class="descrption-text">Jquery</h4>
+                <div class="block-console-inside">
                 {{$showLesson[0]['text_jquery']}}
             </div>
         </div>
+        </div>
 
-        <div class="block-console-result">
-            <div class="descrption">Результат
-            <div class="btn reset-button">Сбросить</div></div>
-            <div class="inside-console">
+        <div class="block-lesson">
+            <div class="block-lesson-child">
+                <h4 class="descrption-text">Результат
+                    <div class="btn reset-button">Сбросить</div>
+                </h4>
+                <div class="block-console-inside" style="padding: 5px;">
                 {{$showLesson[0]['text_result']}}
             </div>
+        </div>
         </div>
     </div>
 

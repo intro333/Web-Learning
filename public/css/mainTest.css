@@ -336,7 +336,7 @@ a:active, a:hover {
     position: relative;
 }
 
-/*W3School*/
+/*New style for lesson box*/
 .block-lesson {
     padding: 1%;
     float: left;
@@ -385,6 +385,7 @@ a:active, a:hover {
     content: attr(data-line-number);
     background: #f1f1f1;
     color: #C0C0C0;
+    margin-right: 2px;
 }
 
 /*.block-console-result {*/

@@ -1,8 +1,8 @@
 /*Убрать скроллбар браузера*/
-::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-}
+/*::-webkit-scrollbar {*/
+    /*width: 0;*/
+    /*height: 0;*/
+/*}*/
 /*
 * Переопределённые------------------------------------------------------------------------------
 */
@@ -335,35 +335,68 @@ a:active, a:hover {
     font-size: 14px;
     position: relative;
 }
-.block-console-result {
-    border: 3px solid #C0C0C0;
-    position: relative;
-    overflow-y: scroll;
-    overflow-x: auto;
-    min-height: 300px;
-    max-height: 300px;
+/*New style for lesson box--------------------------------------------------------------------------------------------*/
+.block-lesson {
+    padding: 1%;
     float: left;
     width: 48%;
-    margin-left: 15px;
-    margin-top: 15px;
+    min-height: 300px;
+}
+
+.block-lesson-child {
+    border-radius: 2px;
+    background-color: #C0C0C0;
+    padding: 0.01em 8px;
+    padding-top: 10px!important;
+    padding-bottom: 8px!important;
+    margin: 0!important;
+    min-height: 300px;
     -webkit-box-shadow: 0 4px 9px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: 0 4px 9px -4px rgba(0,0,0,0.75);
     box-shadow: 0 4px 9px -4px rgba(0,0,0,0.75);
 }
-/*.block-console-result::-webkit-scrollbar-button {*/
-    /*display: none;*/
-/*}*/
-.descrption {
-    display: block ;
-    margin: 0;
-    min-width: 100%;
-    /*max-width: 150%;*/
-    height: 30px;
-    background:#C0C0C0;
-    padding: 4px;
+
+.descrption-text {
     color: #696969;
     font-weight: bold;
+    font-size: 16px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    display: block;
+    margin-bottom: 12px;
 }
+.block-console-inside {
+    white-space: nowrap;
+    color: steelblue;
+    line-height: 1.4;
+    width: auto;
+    height: 265px;
+    background-color: #fff;
+    padding: 5px 5px 5px 5px;
+    /*border-left: 4px solid #000000;*/
+    font-size: 14px;
+    overflow: auto;
+}
+/* скроллбар блока block-console-inside-----------------*/
+.block-console-inside::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background: #f0f0f0;
+}
+.block-console-inside::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.2);
+}
+.block-console-inside::-webkit-scrollbar-thumb {
+    background-color: #D3D3D3;
+}
+/*КОНЕЦ сроллбара--------------------------------------*/
+.block-console-inside span:before {
+    /*display: none;*/
+    content: attr(data-line-number);
+    background: #f1f1f1;
+    color: #C0C0C0;
+}
+/*END new style for lesson box------------------------------------------------------------------------------------*/
+
 .reset-button {
     float: right;
     margin-right: 15px;
@@ -389,21 +422,6 @@ a:active, a:hover {
 }
 .what-is-description:hover {
 
-}
-.inside-console {
-    white-space: nowrap;
-    color: steelblue;
-    width: 100%;
-    padding: 5px;
-}
-.numeric-block {
-    float: left;
-    background: #DCDCDC;
-    width: 25px;
-    min-height: 264px;
-    padding-top: 4px;
-    padding-left: 2px;
-    margin-right: 5px;
 }
 .textareaCode {
     background-color: #ffffff;
