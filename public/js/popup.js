@@ -53,6 +53,7 @@ $(document).on('click', '.main-description', function () {
     $("#blok_one div").attr('data-text', $(this).attr('data-text'));
     $("#blok_one div").attr('data-string', $(this).attr('data-string'));
     $(".popup_main-description").slideDown(110);
+    // $(".popup_main-description").slideDown(110);
 });
 $(document).on('click', '.popup_main-description_bg', function () {
     $(".popup_main-description").fadeOut(50);
