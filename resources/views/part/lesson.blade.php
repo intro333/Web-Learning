@@ -13,7 +13,8 @@
         <div class="block-lesson">
             <div class="block-lesson-child">
                 <h4 class="descrption-text">HTML
-                    <div class="btn btn-lg what-is-description" data-text="HTML" data-string="text_html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></div>
+                    {{--<div class="btn btn-lg what-is-description" data-text="HTML" data-string="text_html"><span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span></div>--}}
+                    <div class="btn btn-lg main-description" data-text="HTML" data-string="text_html"><span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span></div>
                 </h4>
                 <div class="block-console-inside">
                 {{$showLesson[0]['text_html']}}
@@ -23,7 +24,9 @@
 
         <div class="block-lesson">
             <div class="block-lesson-child">
-                <h4 class="descrption-text">CSS</h4>
+                <h4 class="descrption-text">CSS
+                    <div class="btn btn-lg main-description" data-text="CSS" data-string="text_css"><span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span></div>
+                </h4>
                 <div class="block-console-inside">
                 {{$showLesson[0]['text_css']}}
             </div>
@@ -32,7 +35,9 @@
 
         <div class="block-lesson">
             <div class="block-lesson-child">
-                <h4 class="descrption-text">Jquery</h4>
+                <h4 class="descrption-text">Jquery
+                    <div class="btn btn-lg main-description" data-text="Jquery" data-string="text_jquery"><span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span></div>
+                </h4>
                 <div class="block-console-inside">
                 {{$showLesson[0]['text_jquery']}}
             </div>
@@ -42,7 +47,7 @@
         <div class="block-lesson">
             <div class="block-lesson-child">
                 <h4 class="descrption-text">Результат
-                    <div class="btn reset-button">Сбросить</div>
+                    <span class="glyphicon glyphicon-refresh reset-button" aria-hidden="true"></span>
                 </h4>
                 <div class="block-console-inside" style="padding: 5px;">
                 {{$showLesson[0]['text_result']}}

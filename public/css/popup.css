@@ -1,5 +1,6 @@
 /*
 * Описание к блокам
+*popup what-is-description
 */
 .popup_what-is-description {
     position: absolute;
@@ -64,7 +65,6 @@
     text-align: center;
     display: inline-block;
     padding: 4px 8px 4px 8px;
-    border-radius: 5px;
     color: #F5F5F5;
     font-weight: bold;
     background: #2e6da4;
@@ -76,4 +76,62 @@
     background-color: #2F4F4F;
     background: #2F4F4F;
     color: #fff;
+}/*END *popup what-is-description*/
+
+/*main-description-popup*/
+.popup_main-description {
+    position: absolute;
+    height:100%;
+    width:100%;
+    z-index:200000;
+    top:0;
+    left:0;
+    display:none;
 }
+.popup_main-description_bg {
+    /*background:rgba(0,0,0,0.111111);*/
+    background: transparent;
+    position:fixed;
+    z-index:1;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    padding: 0;
+}
+.for-main-desc-block {
+    position: relative;
+    margin:0;
+    width: 150px;
+}
+#blok_one {
+    position: relative;
+    z-index:2;
+    width: 100%;
+    /*color: #fff;*/
+    /*font-weight: bold;*/
+    padding-top:5px;
+    padding-bottom:5px;
+    background:#fff;
+    background-color:#fff;
+    border:1px solid #D3D3D3;
+    -webkit-box-shadow: 0px 0px 19px -2px rgba(97,97,97,1);
+    -moz-box-shadow: 0px 0px 19px -2px rgba(97,97,97,1);
+    box-shadow: 0px 0px 19px -2px rgba(97,97,97,1);
+    border-radius: 1px;
+}
+#blok_one div {
+    color: #3c3c3c;
+    padding-left: 10px;
+    margin: 0;
+}
+#blok_one div p {
+    margin: 0;
+    padding: 5px;
+}
+#blok_one div:hover {
+    background: #dcdcdc;
+    height:100%;
+    cursor: pointer;
+}
+/*END main-description-popup*/

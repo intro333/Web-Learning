@@ -1,3 +1,16 @@
+<!-- главный дескрипшн для блоков -->
+<div class="popup_main-description">
+    <div class="popup_main-description_bg"></div>
+    <div class="for-main-desc-block">
+        <div id="blok_one">
+            <div class="what-is-description" data-text="" data-string=""><p>Описание</p></div>
+            <div><p>Нумерация</p></div>
+        </div>
+    </div>
+
+</div>
+
+<!-- описание внутренностей блока -->
 <div class="popup_what-is-description">
     <div class="popup_what-is-description_bg"></div>
     <div class="for-three-block">

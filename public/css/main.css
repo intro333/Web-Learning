@@ -323,7 +323,8 @@ a:active, a:hover {
     margin-right: 8px;
 }
 .main-description {
-    margin-left: 20px;
+    float: right;
+    padding: 0 5px 0 5px;
 }
 .main-blok {
     display: inline-block;
@@ -399,34 +400,21 @@ a:active, a:hover {
 }
 /*КОНЕЦ сроллбара--------------------------------------*/
 
-/*END new style for lesson box------------------------------------------------------------------------------------*/
-
+/*Кнопка перезагрузки 4го блока*/
 .reset-button {
+    font-weight: bold;
     float: right;
     margin-right: 15px;
-    font-size: 12px;
-    padding: 1px 5px 1px 5px;
-    display: inline-block;
-    font-weight: 400;
-    border-radius: 5px;
-    border: 1px solid #c9c9c9;
-    background-color: #696969;
-    background: #696969;
-    color: #ffffff;
 }
 .reset-button:hover {
-    background-color: #A9A9A9;
-    background: #A9A9A9;
-    border: 1px solid #ffffff;
+    color: #333;
+    cursor: pointer;
 }
+.reset-button:active {
+    font-weight: 400;
+}
+/*END new style for lesson box------------------------------------------------------------------------------------*/
 
-.what-is-description {
-    float: right;
-    padding: 0 5px 0 5px;
-}
-.what-is-description:hover {
-
-}
 .textareaCode {
     background-color: #ffffff;
     font-family: consolas,"courier new",monospace;
