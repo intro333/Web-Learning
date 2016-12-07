@@ -57,5 +57,19 @@ $(document).on('click', '.main-description', function () {
 });
 $(document).on('click', '.popup_main-description_bg', function () {
     $(".popup_main-description").fadeOut(50);
+});//END main-description-popup
+
+//menu-option
+$(document).on('click', '#menu-option', function () {
+    var top = $(this).offset().top;
+    var left = $(this).offset().left;
+    $(".popup_menu-option").css({top: top + 55, left: left - 15});
+    $('#menu-option a').css('color', '#111111');
+    $(this).css('background', '#C0C0C0');
+    $('.popup_menu-option').slideDown(110);
 });
-//END main-description-popup
+$(document).on('click', '.popup_menu-option_bg', function () {
+    $('#menu-option').css('background', '');
+    $('#menu-option a').css('color', '');
+    $(".popup_menu-option").fadeOut(50);
+});//END main-description-popup

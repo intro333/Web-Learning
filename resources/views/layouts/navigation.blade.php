@@ -28,7 +28,7 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="#"><span class="glyphicon glyphicon-search"></span> Поиск</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-th-large"></span> Настройки</a></li>
+            <li id="menu-option"><a href="#"><span class="glyphicon glyphicon-th-large"></span> Настройки</a></li>
             <li><a href="#"><span class="glyphicon glyphicon-user"></span> Регистрация</a></li>
             <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Вход</a></li>
         </ul>
