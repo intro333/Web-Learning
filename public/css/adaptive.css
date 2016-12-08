@@ -55,6 +55,29 @@
 }
 /***** END! ADAPTIVE for footer END!******/
 
+/*адаптив для меню,навигации*/
+@media (max-width: 900px) {
+    .mob-nav-text {
+        display: none;
+    }
+}
+@media (max-width: 1767px) {
+    #mob-www-logo {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .navbar-header {
+    display: none;
+    }
+    .mob-nav-text {
+        display: inline;
+    }
+    #mob-www-logo {
+        display: inline;
+    }
+}
+
 /*Блок с заданиями*/
 @media (max-width: 900px) {
     .block-lesson {

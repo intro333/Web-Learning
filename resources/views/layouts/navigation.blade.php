@@ -7,6 +7,7 @@
         <ul class="nav navbar-nav">
             {{--<li><a href="/admin/panel">Админ Панель</a></li>--}}
             {{--<li><a href="/startLesson/testLesson">Test Lesson</a></li>--}}
+            <li id="mob-www-logo"><a href="/">Веб Уроки</a></li>
             <li><a href="#">Компоненты</a></li>
             <li><a href="#">О проекте</a></li>
             <li><a href="#">Контакты</a></li>
@@ -27,10 +28,25 @@
             {{--</li>--}}
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-search"></span> Поиск</a></li>
-            <li id="menu-option"><a href="#"><span class="glyphicon glyphicon-th-large"></span> Настройки</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Регистрация</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Вход</a></li>
-        </ul>
+            <li><a href="#"><span class="glyphicon glyphicon-search"></span> <span class="mob-nav-text">Поиск</span></a></li>
+            <li id="menu-option">
+                <a href="#">
+                    <span class="glyphicon glyphicon-th-large"></span>
+                    <span class="mob-nav-text">Настройки</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="glyphicon glyphicon-user"></span>
+                    <span class="mob-nav-text">Регистрация</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="glyphicon glyphicon-log-in"></span>
+                    <span class="mob-nav-text">Вход</span>
+                </a>
+            </li>
+       </ul>
     </div>
 </nav>
