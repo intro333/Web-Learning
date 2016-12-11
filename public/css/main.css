@@ -45,6 +45,9 @@ tab {
 .mob-nav-text {
     margin-left: 2px;
 }
+.mobile-nav-bar-1 {
+    display: none;
+}
 
 /*GO for footer ------------------------------------*/
 
@@ -132,6 +135,15 @@ tab {
 /*
 * Для nextOrPrevLesson
 */
+.container-for-nextOrPrev {
+    margin-bottom: 40px;
+    width: 90%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
 .previous-button {
     text-align: center;
     display: inline-block;
@@ -309,7 +321,9 @@ a:active, a:hover {
 * Постояные стили для лекций
 */
 .lesson-theme {
+    word-wrap: break-word;
     border: 1px solid #2e6da4;
+    max-width: 75%;
     border-radius: 3px;
     font-weight: bold;
     background: #2e6da4;

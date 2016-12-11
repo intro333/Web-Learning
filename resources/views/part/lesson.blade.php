@@ -7,7 +7,7 @@
     <input type="hidden" id="part-number" value="{!! $showLesson[0]['part'] !!}">
     <input type="hidden" id="lesson-number" value="{!! $showLesson[0]['lesson'] !!}">
 
-    <div class="lesson-theme"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>{{$showLesson[0]['theme']}}</div>
+    <div class="lesson-theme"><span class="glyphicon glyphicon-folder-open"></span><span>{{$showLesson[0]['theme']}}</span></div>
 
     <div class="main-blok">
         <div class="block-lesson">

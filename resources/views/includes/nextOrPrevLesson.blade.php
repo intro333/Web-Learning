@@ -2,7 +2,7 @@
 
 </style>
 
-<div class="container">
+<div class="container-for-nextOrPrev">
     @if($showLesson[0]['lesson'] == 1)
         <a class="btn  button_off">Предыдущий</a>
     @else

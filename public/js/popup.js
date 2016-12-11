@@ -1,3 +1,13 @@
+//mob-nav-elem
+$(document).on('click', '.mob-nav-elem', function () {
+    $('.mob-nav-elem').css('opacity', '0.4');
+    $('.popup_mob-nav-elem').slideDown(110);
+
+});
+$(document).on('click', '.popup_mob-nav-elem_bg', function () {
+    $('.mob-nav-elem').css('opacity', '');
+    $(".popup_mob-nav-elem").fadeOut(50);
+});
 //popup what-is-description
 $(document).on('click', '.what-is-description', function () {
     $(".popup_main-description").fadeOut(50);
