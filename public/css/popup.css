@@ -179,17 +179,24 @@
 }
 #blok_menu-option div {
     color: #3c3c3c;
-    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
     margin: 0;
 }
-#blok_menu-option div p {
+#blok_menu-option div span {
     margin: 0;
-    padding: 5px;
+    /*padding: 5px;*/
 }
 #blok_menu-option div:hover {
     background: #dcdcdc;
     height:100%;
     cursor: pointer;
+}
+.right-for-options {
+    float: right;
+    padding-right: 10px;
+    display: none;
 }
 /*END menu-option*/
 

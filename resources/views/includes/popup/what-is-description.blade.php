@@ -29,9 +29,12 @@
     <div class="popup_menu-option_bg"></div>
     <div class="for-menu-option">
         <div id="blok_menu-option">
-            <div class="on-off-numeration"><p>Нумерация</p></div>
-            <div class="on-off-numeration"><p>Нумерация</p></div>
-            <div class="on-off-numeration"><p>Нумерация</p></div>
+            <div class="on-off-numeration">
+                <span>Нумерация</span>
+                <span class="glyphicon glyphicon-ok right-for-options"></span>
+            </div>
+            <div class="on-off-numeration"><span>Нумерация</span></div>
+            <div class="on-off-numeration"><span>Нумерация</span></div>
         </div>
     </div>
 </div>

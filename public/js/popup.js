@@ -82,4 +82,18 @@ $(document).on('click', '.popup_menu-option_bg', function () {
     $('#menu-option').css('background', '');
     $('#menu-option a').css('color', '');
     $(".popup_menu-option").fadeOut(50);
-});//END main-description-popup
+});
+$(document).on('click', '.on-off-numeration', function () {
+    var opt = $('.on-off-numeration .right-for-options');
+    var status = opt.hasClass('is-active');
+    if (status) {
+        opt.css('display', 'none');
+        opt.removeClass('is-active');
+        $('.block-console-inside span:before').css('display', 'none');
+    } else {
+        opt.css('display', 'block');
+        opt.addClass('is-active');
+        $('.block-console-inside span:before').css('display', 'inline');
+    }
+});
+//END main-description-popup
