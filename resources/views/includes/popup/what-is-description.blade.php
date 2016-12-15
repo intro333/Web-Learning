@@ -19,7 +19,7 @@
             <p></p>
         </div>
         <div id="blok3">
-            <button type="button" onclick="showOutPopup()" class="btn btn-default close-button">Закрыть</button>
+            <button type="button" onclick="showOutPopup()" class="close-button">Закрыть</button>
         </div>
     </div>
 </div>

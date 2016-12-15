@@ -55,6 +55,16 @@ $( document ).ready(function() {
         interval: 5000,
         pause: false
     });
+    setTimeout(function () {
+        var opt = $('.on-off-numeration .right-for-options');
+        var status = opt.css('display');
+        if (status == 'block') {
+            opt.addClass('is-active');
+        } else {
+            console.log(status)
+            //ничего не делаем
+        }
+    }, 200);
 });
 
 //Scroll by Max

@@ -89,11 +89,11 @@ $(document).on('click', '.on-off-numeration', function () {
     if (status) {
         opt.css('display', 'none');
         opt.removeClass('is-active');
-        $('.block-console-inside span:before').css('display', 'none');
+        $('.block-console-inside span[data-line-number]').css('display', 'none');
     } else {
         opt.css('display', 'block');
         opt.addClass('is-active');
-        $('.block-console-inside span:before').css('display', 'inline');
+        $('.block-console-inside span[data-line-number]').css('display', 'inline');
     }
 });
 //END main-description-popup

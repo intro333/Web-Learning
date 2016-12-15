@@ -1,5 +1,22 @@
 @extends('app')
 @section('content')
+    <style>
+        <?php if (true) { ?>
+            .block-console-inside span[data-line-number] {
+                display: none;
+            }
+            .on-off-numeration .right-for-options {
+                display: none;
+            }
+       <?php } else { ?>
+            .block-console-inside span[data-line-number] {
+               display: inline;
+            }
+            .on-off-numeration .right-for-options {
+                display: inline;
+            }
+        <?php  } ?>
+    </style>
 
     <h2 class="lesson-number">Урок {!! $showLesson[0]['lesson'] !!}</h2>
     <h2 class="part-number">Часть {!! $showLesson[0]['part'] !!}</h2>
