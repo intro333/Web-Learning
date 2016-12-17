@@ -73,10 +73,13 @@
     text-shadow: none;
 }
 .close-button:hover {
-    text-shadow: none;
-    background-color: #8FBC8F;
-    background: #8FBC8F;
-    color: #fff;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 10px -2px rgba(41, 99, 160,0.8);
+    -moz-box-shadow: 0px 0px 10px -2px rgba(41, 99, 160,0.8);
+    box-shadow: 0px 0px 10px -2px rgba(41, 99, 160,0.8);
+}
+.close-button:active {
+    background: #294b70;
 }/*END *popup what-is-description*/
 
 /*main-description-popup*/
@@ -131,7 +134,8 @@
     padding: 5px;
 }
 #blok_one div:hover {
-    background: #dcdcdc;
+    color: #fff;
+    background: #2e6da4;
     height:100%;
     cursor: pointer;
 }
@@ -140,11 +144,7 @@
 /*menu-option*/
 .popup_menu-option {
     position: absolute;
-    height:100%;
-    width:100%;
     z-index:200000;
-    top:0;
-    left:0;
     display:none;
 }
 .popup_menu-option_bg {
@@ -176,7 +176,7 @@
     -webkit-box-shadow: 0px 0px 10px -2px rgba(97,97,97,1);
     -moz-box-shadow: 0px 0px 10px -2px rgba(97,97,97,1);
     box-shadow: 0px 0px 10px -2px rgba(97,97,97,1);
-    border-radius: 1px;
+    border-radius: 2px;
 }
 #blok_menu-option div {
     color: #3c3c3c;
@@ -190,7 +190,8 @@
     /*padding: 5px;*/
 }
 #blok_menu-option div:hover {
-    background: #dcdcdc;
+    background: #2e6da4;
+    color: #fff;
     height:100%;
     cursor: pointer;
 }
@@ -200,6 +201,65 @@
     display: none;
 }
 /*END menu-option*/
+
+/*mobile-menu-option*/
+.popup_mobile-menu-option {
+    position: absolute;
+    z-index:200000;
+    display:none;
+}
+.popup_mobile-menu-option_bg {
+    background: transparent;
+    position:fixed;
+    z-index:1;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    padding: 0;
+}
+.for-mobile-menu-option {
+    position: relative;
+    margin:0;
+    width: 120px;
+}
+#blok_mobile-menu-option {
+    position: relative;
+    z-index:2;
+    width: 100%;
+    padding-top:5px;
+    padding-bottom:5px;
+    background:#fff;
+    background-color:#fff;
+    border:1px solid #D3D3D3;
+    -webkit-box-shadow: 0px 0px 10px -2px rgba(97,97,97,1);
+    -moz-box-shadow: 0px 0px 10px -2px rgba(97,97,97,1);
+    box-shadow: 0px 0px 10px -2px rgba(97,97,97,1);
+    border-radius: 2px;
+}
+#blok_mobile-menu-option div {
+    font-size: 14px;
+    color: #3c3c3c;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    margin: 0;
+}
+#blok_mobile-menu-option div span {
+    margin: 0;
+}
+#blok_mobile-menu-option div:hover {
+    background: #2e6da4;
+    color: #fff;
+    height:100%;
+    cursor: pointer;
+}
+.right-for-options {
+    float: right;
+    padding-right: 10px;
+    display: none;
+}
+/*END mobile-menu-option*/
 
 /*mob-nav-elem*/
 .popup_mob-nav-elem {
@@ -254,10 +314,10 @@
     text-decoration: none;
 }
 #blok_mob-nav-elem a:hover {
-    color: #333;
+    color: #fff;
 }
 #blok_mob-nav-elem div:hover {
-    background: #dcdcdc;
+    background: #2e6da4;
     height:100%;
     cursor: pointer;
 }

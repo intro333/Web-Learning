@@ -15,6 +15,17 @@
         margin-right: 35px; } }
 
 @media (max-width: 767px) {
+    .for-main-desc-block {
+        width: 120px;
+    }
+    #blok_one {
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    #blok_one div {
+        font-size: 14px;
+        padding-left: 3px;
+    }
     .b-menu {
         height: auto;
     }
@@ -111,6 +122,8 @@
         margin-bottom: 3px;
     }
     .mob-menu-right {
+        margin-top: 1px;
+        font-size: 17px;
         float: right;
         margin-right: 20px;
         color: #696969;

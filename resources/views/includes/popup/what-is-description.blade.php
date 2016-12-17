@@ -19,7 +19,7 @@
             <p></p>
         </div>
         <div id="blok3">
-            <button type="button" onclick="showOutPopup()" class="close-button">Закрыть</button>
+            <span onclick="showOutPopup()" class="close-button">Закрыть</span>
         </div>
     </div>
 </div>
@@ -29,6 +29,21 @@
     <div class="popup_menu-option_bg"></div>
     <div class="for-menu-option">
         <div id="blok_menu-option">
+            <div class="on-off-numeration">
+                <span>Нумерация</span>
+                <span class="glyphicon glyphicon-ok right-for-options"></span>
+            </div>
+            <div class="on-off-numeration"><span>Нумерация</span></div>
+            <div class="on-off-numeration"><span>Нумерация</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- настройки(в меню на мобильном) popup_mobile-menu-option -->
+<div class="popup_mobile-menu-option">
+    <div class="popup_mobile-menu-option_bg"></div>
+    <div class="for-mobile-menu-option">
+        <div id="blok_mobile-menu-option">
             <div class="on-off-numeration">
                 <span>Нумерация</span>
                 <span class="glyphicon glyphicon-ok right-for-options"></span>

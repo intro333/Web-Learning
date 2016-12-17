@@ -9,7 +9,7 @@
                 </div>
                     <span class="glyphicon glyphicon-log-in  mob-menu-right"></span>
                     <span class="glyphicon glyphicon-user  mob-menu-right"></span>
-                    <span class="glyphicon glyphicon-cog  mob-menu-right"></span>
+                    <span id="mobile-menu-option" class="glyphicon glyphicon-cog  mob-menu-right"></span>
                     <span class="glyphicon glyphicon-search  mob-menu-right"></span>
             </div>
         </div>

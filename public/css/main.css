@@ -42,6 +42,12 @@ tab {
 /*
 * Меню,навигация
 */
+.navbar-nav > li:hover {
+    background: #2e6da4;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: #fff;
+}
 .mob-nav-text {
     margin-left: 2px;
 }
