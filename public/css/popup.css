@@ -34,8 +34,6 @@
     font-weight: bold;
     padding:10px 20px;
     background:#2e6da4;
-    /*border:1px solid #2e6da4;*/
-    /*box-shadow:0 0 2px rgba(0,0,0,0.5);*/
     border-radius: 5px 5px 0 0 ;
 }
 #blok3 {
@@ -45,7 +43,6 @@
     padding:10px 20px;
     background:#F5F5F5;
     border-top:1px solid #A9A9A9;
-    /*box-shadow:0 0 2px rgba(0,0,0,0.5);*/
     border-radius: 0 0 5px 5px ;
 }
 #blok2 {
@@ -56,8 +53,6 @@
     overflow-y: scroll;
     padding:10px 20px;
     background:#FFFFFF;
-    /*border:1px solid #2e6da4;*/
-    box-shadow:0 0 2px rgba(0,0,0,0.5);
 }
 
 /*Close button*/
@@ -126,12 +121,11 @@
 }
 #blok_one div {
     color: #3c3c3c;
-    padding-left: 10px;
     margin: 0;
 }
 #blok_one div p {
     margin: 0;
-    padding: 5px;
+    padding: 5px 7px;
 }
 #blok_one div:hover {
     color: #fff;

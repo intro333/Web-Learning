@@ -18,11 +18,14 @@
         <?php  } ?>
     </style>
 
-    <h2 class="lesson-number">Урок {!! $showLesson[0]['lesson'] !!}</h2>
+    <h2 class="lesson-number">Урок {!! $showLesson[0]['lesson'] !!}<span class="glyphicon glyphicon-film video-description"></span></h2>
     <h2 class="part-number">Часть {!! $showLesson[0]['part'] !!}</h2>
     <input type="hidden" name="_token" id="_token" value="{{ csrf_token() }}">
     <input type="hidden" id="part-number" value="{!! $showLesson[0]['part'] !!}">
     <input type="hidden" id="lesson-number" value="{!! $showLesson[0]['lesson'] !!}">
+    <input type="hidden" id="what-is-lang-html" value="{{\Config::get('my_app.what-is-lang.langs')['html']}}">
+    <input type="hidden" id="what-is-lang-css" value="{{\Config::get('my_app.what-is-lang.langs')['css']}}">
+    <input type="hidden" id="what-is-lang-jquery" value="{{\Config::get('my_app.what-is-lang.langs')['jquery']}}">
 
     <div class="lesson-theme"><span class="glyphicon glyphicon-folder-open"></span><span>{{$showLesson[0]['theme']}}</span></div>
 
@@ -64,9 +67,9 @@
         <div class="block-lesson">
             <div class="block-lesson-child">
                 <h4 class="descrption-text">Результат
-                    <span class="glyphicon glyphicon-refresh reset-button" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-repeat reset-button" aria-hidden="true"></span>
                 </h4>
-                <div class="block-console-inside" style="padding: 5px;">
+                <div class="block-console-inside" style="padding-left: 13px;">
                 {{$showLesson[0]['text_result']}}
             </div>
         </div>

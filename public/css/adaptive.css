@@ -16,7 +16,7 @@
 
 @media (max-width: 767px) {
     .for-main-desc-block {
-        width: 120px;
+        width: 140px;
     }
     #blok_one {
         padding-top: 3px;
@@ -24,7 +24,6 @@
     }
     #blok_one div {
         font-size: 14px;
-        padding-left: 3px;
     }
     .b-menu {
         height: auto;
