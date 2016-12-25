@@ -18,7 +18,7 @@
         <?php  } ?>
     </style>
 
-    <h2 class="lesson-number">Урок {!! $showLesson[0]['lesson'] !!}<span class="glyphicon glyphicon-film video-description"></span></h2>
+    <h2 class="lesson-number">Урок {!! $showLesson[0]['lesson'] !!}<span class="glyphicon glyphicon-question-sign lesson-description"></span></h2>
     <h2 class="part-number">Часть {!! $showLesson[0]['part'] !!}</h2>
     <input type="hidden" name="_token" id="_token" value="{{ csrf_token() }}">
     <input type="hidden" id="part-number" value="{!! $showLesson[0]['part'] !!}">

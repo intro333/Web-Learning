@@ -64,7 +64,6 @@ $(document).on('click', '.what-is-lang', function () {
     var block2 = $('#blok2');
     var forThee = $('.for-three-block');
     var data = $(attrTextSm).val();
-    console.log(data)
     //Стереть предыдущее содержимое
     block1.text('');
     block2.html('');
@@ -81,11 +80,34 @@ $(document).on('click', '.what-is-lang', function () {
     block1.text(attrText);
     block2.html(data);
     $(".popup_what-is-description").fadeIn(300);
-});
-
-$(document).on('click', '.popup_what-is-description_bg', function () {
-    $(".popup_what-is-description").fadeOut(300);   //убираем всплывающее окно
 });//END what-is-lang
+
+//popup lesson-description
+$(document).on('click', '.lesson-description', function () {
+    var lesson = $('.lesson-number').text();
+    var windowWidth  = $(window).width();
+    var windowHeight = $(window).height();
+    var block1 = $('#blok1');
+    var block2 = $('#blok2');
+    var forThee = $('.for-three-block');
+    // var data = $(attrTextSm).val();
+    //Стереть предыдущее содержимое
+    block1.text('');
+    block2.html('');
+    if (windowWidth > 1024 && windowHeight > 600) {
+        forThee.css('top', $(window).scrollTop() + 150);
+    } else if (windowHeight >= 960 && windowHeight < 1100) {
+        forThee.css('top', $(window).scrollTop() + 150);
+        forThee.css('width', '90%');
+    } else {
+        forThee.css('top', $(window).scrollTop() + 50);
+        forThee.css('width', '90%');
+    }
+
+    block1.text(lesson);
+    // block2.html(data);
+    $(".popup_what-is-description").fadeIn(300);
+});//END lesson-description
 
 //popup main-description-popup
 $(document).on('click', '.main-description', function () {

@@ -16,3 +16,14 @@
         width: 100%;
     }
 }
+
+/*CASCADE description part-lesson*/
+.cascade-decr-p1-l1-selector {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #777;
+    font-weight: 600;
+}
+.cascade-decr-p1-l1-selector:hover {
+    color: #000;
+}

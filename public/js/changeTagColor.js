@@ -17,8 +17,8 @@ $( document ).ready(function() {
     // console.log(body.html())
     var text = body.text().replace(/\.(.+?)\ /g, "<b>.$1 </b>")
         .replace(/\:(.+?)\;/g, "<span style='color: forestgreen;'>:$1;</span>")
-        .replace(/\#(.+?)\;/g, "<span style='color: forestgreen;'><b>#$1;</b></span>")
-        .replace(/(px)/g, "<b>$1</b>")
+        // .replace(/\#(.+?)\;/g, "<span style='color: forestgreen;'><b>#$1;</b></span>")
+        // .replace(/(px)/g, "<b>$1</b>")
     body.html(text);
 
     /*Цвет для селекторов Jquery*/

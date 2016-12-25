@@ -57,10 +57,23 @@
         padding: 5px 0;
 
     }
-
     .b-footer__bottom {
         line-height: 1 !important;
         height: 100px
+    }
+    #blok1 {
+        font-size: 13px;
+    }
+    #blok2 {
+        font-size: 13px;
+        padding: 7px;
+    }
+    #blok3 {
+       padding-top: 4px;
+        padding-bottom: 4px;
+    }
+    .close-button {
+        font-size: 11px;
     }
 }
 /***** END! ADAPTIVE for footer END!******/
@@ -172,6 +185,12 @@
         width: 95%;
         margin-left: 7px;
         margin-top: 5px;
+    }
+    .lesson-description {
+        font-size: 18px;
+    }
+    .lesson-description:active {
+        font-size: 17px;
     }
 }
 @media (max-width: 405px) {

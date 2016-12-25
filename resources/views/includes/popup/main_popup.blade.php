@@ -3,8 +3,8 @@
     <div class="popup_main-description_bg"></div>
     <div class="for-main-desc-block">
         <div id="blok_one">
-            <div class="what-is-lang"><p></p></div>
             <div class="what-is-description" data-text="" data-string=""><p>Код этого блока</p></div>
+            <div class="what-is-lang"><p></p></div>
         </div>
     </div>
 </div>
