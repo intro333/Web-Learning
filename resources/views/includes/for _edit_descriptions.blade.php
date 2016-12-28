@@ -42,5 +42,18 @@ Jquery
 <div>
     <div style="padding:1px 2px 1px 2px;border:1px solid #C0C0C0;background:#f5f5f5;border-radius: 2px;display:inline;margin-right: 5px;">
         <span style="color: #4B0082;">$</span><span>('</span><span style="color: #2e6da4"><b>.square</b></span><span>')</span>
-    </div>Разделим на две части: <span style="color: #2e6da4"><b>'.square'</b></span> является <span class="cascade-decr-p1-l1-selector">селектором</span>, а <span style="color: #4B0082;">$</span>( ) — это функция, которая осуществляет поиск элементов по заданному селектору.
+    </div>Разделим это выражение на две части:<br />
+    <span style="color: #4B0082;">$</span>( ) — это функция, которая осуществляет поиск элементов по заданному <span class="cascade-decr-p1-l1-selector">селектору</span>.<br />
+    <span style="color: #2e6da4">'.square'</span> является селектором.<br />
+    В этом выражении мы передаём селектор '.square' функции $( ). Функция найдёт HTML элемент с классом <span style="color: #2e6da4">.square</span>, то есть &lt;div class="square"&gt;&lt;/div&gt;.
+</div>
+<div style="margin-top: 5px">
+    <div style="padding:1px 2px 1px 2px;border:1px solid #C0C0C0;background:#f5f5f5;border-radius: 2px;display:inline;margin-right: 5px;">
+        <span style="color:#CD853F">click</span>
+    </div> - событие click произойдёт, если кликнуть по элементу, в данном случае по квадрату.
+</div>
+<div style="margin-top: 5px">
+    <div style="padding:1px 2px 1px 2px;border:1px solid #C0C0C0;background:#f5f5f5;border-radius: 2px;display:inline;margin-right: 5px;">
+        <span style="color: #0000CD;"><b>function</b>  <span style="color: steelblue;">() {}</span></span>
+    </div> - это выражение целиком является функцией. В круглые скобки помещаются параметры, а в фигурные тело функции,то есть код, который выполняется при её вызове. В данном примере функция помещается в событие <span style="color:#CD853F">click</span> и вызывается, когда пользователь кликает по элементу.
 </div>

@@ -68,8 +68,7 @@
 }
 #blok2::-webkit-scrollbar-thumb:hover {
     background-color: #808080;
-}
-/*КОНЕЦ сроллбара--------------------------------------*/
+}/*END сроллбар--------------------------------------*/
 
 /*Close button*/
 .close-button {
@@ -86,10 +85,14 @@
 }
 .close-button:hover {
     cursor: pointer;
-    background: #294b70;
+    color: #2e6da4;
+    background: #fff;
+    border: 1px outset #2e6da4;
+    padding: 3px 8px 3px 8px;
+    /*background: #294b70;*/
 }
 .close-button:active {
-    background: #233551;
+    background: #eaf2ff;
 }/*END *popup what-is-description*/
 
 /*main-description-popup*/
