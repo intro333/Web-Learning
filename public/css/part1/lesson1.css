@@ -19,11 +19,28 @@
 
 /*CASCADE description part-lesson*/
 .cascade-decr-p1-l1-selector {
+    display: inline-block;
     cursor: pointer;
     text-decoration: underline;
     color: #777;
     font-weight: 600;
+    position: relative;
 }
 .cascade-decr-p1-l1-selector:hover {
+    color: #000;
+}
+/*tooltip*/
+.tooltipDescTextJsP1L1 {
+    background: #A9A9A9;
+    display: none;
+    padding: 5px;
+    color: #fff;
+}
+.tooltipTextJsP1L1 {
+    text-decoration: underline;
+    /*font-weight: bold;*/
+}
+.tooltipTextJsP1L1:hover {
+    cursor: pointer;
     color: #000;
 }

@@ -84,13 +84,16 @@ $(document).on('click', '.what-is-lang', function () {
 
 //popup lesson-description
 $(document).on('click', '.lesson-description', function () {
-    var lesson = $('.lesson-number').text();
+    var lessonText = $('.lesson-number').text();
     var windowWidth  = $(window).width();
     var windowHeight = $(window).height();
+    var part = $('#part-number').val();
+    var lesson = $('#lesson-number').val();
+    var token = $('#_token').val();
+    var attr = $(this).attr('data-string');
     var block1 = $('#blok1');
     var block2 = $('#blok2');
     var forThee = $('.for-three-block');
-    // var data = $(attrTextSm).val();
     //Стереть предыдущее содержимое
     block1.text('');
     block2.html('');
@@ -104,9 +107,18 @@ $(document).on('click', '.lesson-description', function () {
         forThee.css('width', '90%');
     }
 
-    block1.text(lesson);
-    // block2.html(data);
-    $(".popup_what-is-description").fadeIn(300);
+    block1.append('<span style="float: right;">' + lessonText + '</span>');
+    block1.append('Описание');
+    var url = "/lessons/getDescription?_token=" + token + "&part_id=" + part + "&lesson_id=" + lesson + '&attr=' + attr ;
+    $.ajax({
+        type: 'POST',
+        url: url,
+        dataType: 'text',
+        success: function (data) {
+            $('#blok2').html(data);
+            $(".popup_what-is-description").fadeIn(300);
+        }
+    });
 });//END lesson-description
 
 //popup main-description-popup
@@ -175,5 +187,4 @@ $(document).on('click', '.on-off-numeration', function () {
         opt.addClass('is-active');
         $('.block-console-inside span[data-line-number]').css('display', 'inline');
     }
-});
-//END main-description-popup
+});//END main-description-popup

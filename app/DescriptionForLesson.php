@@ -13,6 +13,7 @@ class DescriptionForLesson extends Model
     protected $fillable = [
         'lesson_id',
         'part_id',
+        'lesson_description',
         'text_html',
         'text_css',
         'text_jquery',

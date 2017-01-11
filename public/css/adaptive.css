@@ -206,6 +206,9 @@
     .container-for-nextOrPrev {
         width: 100%;
     }
+    .for-three-block {
+        margin-left: 12px;
+    }
 }
 
 /*nextOrPrev*/

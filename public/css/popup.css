@@ -46,6 +46,7 @@
     border-radius: 0 0 5px 5px ;
 }
 #blok2 {
+    line-height: 1.6em;
     position: relative;
     z-index:2;
     width: 100%;
@@ -332,5 +333,59 @@
     background: #2e6da4;
     height:100%;
     cursor: pointer;
+}/*END mob-nav-elem*/
+
+/*tool-tip*/
+.cascade-decr-p1-l1-selector .tooltiptext {
+    visibility: hidden;
+    max-width: 320px;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    padding:5px;
+    text-align: left;
+
+    position:  absolute;
+    z-index: 1;
 }
-/*END mob-nav-elem*/
+
+.cascade-decr-p1-l1-selector:hover .tooltiptext {
+    visibility: visible;
+}
+/*2 tooltip*/
+a.tooltipText2 {outline:none; }
+a.tooltipText2:hover {text-decoration:none;cursor: pointer;}
+a.tooltipText2 span {
+    z-index:10;display:none; padding:14px 20px;
+    margin-top:-30px; margin-left:18px;
+    width:300px; line-height:16px;
+}
+a.tooltipText2:hover span{
+    display:inline; position:fixed; color:#111;
+    border:1px solid #DCA; background:#fffAF0;}
+.callout {z-index:20;position:absolute;top:30px;border:0;left:-12px;}
+
+a.tooltipText2 span
+{
+    border-radius:4px;
+    box-shadow: 5px 5px 8px #CCC;
+}/*END tooltip*/
+
+/*мини блок для выделения кода*/
+.allocation_block_border {
+    padding-left:3px;
+    border:1px solid #C0C0C0;
+    background:#f5f5f5;
+    border-radius: 2px;
+    display:inline;
+    margin-right: 5px;
+}
+.allocation_block_no_border {
+    padding-left:2px;
+    padding-right:2px;
+    border:1px solid #efefef;
+    background:#f1f1f1;
+    border-radius: 2px;
+    display:inline;
+    /*margin-right: 5px;*/
+}

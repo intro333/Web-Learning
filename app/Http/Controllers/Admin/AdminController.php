@@ -117,12 +117,13 @@ class AdminController extends Controller
     {
         $description = DescriptionForLesson::where('part_id', $part)->where('lesson_id', $numLesson);
         $description->update([
-            'part_id'          =>  $request->input('part'),
-            'lesson_id'        =>  $request->input('lesson'),
-            'text_html'     =>  $request->input('text_html'),
-            'text_css'      =>  $request->input('text_css'),
-            'text_jquery'   =>  $request->input('text_jquery'),
-            'updated_at'    =>  Carbon::now()
+            'part_id'               =>  $request->input('part'),
+            'lesson_id'             =>  $request->input('lesson'),
+            'text_html'             =>  $request->input('text_html'),
+            'lesson_description'    =>  $request->input('lesson_description'),
+            'text_css'              =>  $request->input('text_css'),
+            'text_jquery'           =>  $request->input('text_jquery'),
+            'updated_at'            =>  Carbon::now()
         ]);
 
         return redirect('/admin/editDescriptions/' . $request->input('part') . '/' . $request->input('lesson'));

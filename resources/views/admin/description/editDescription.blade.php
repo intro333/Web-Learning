@@ -20,6 +20,11 @@
         <div class="admin-main-blok">
 
             <div class="admin-block-console-result">
+                <div class="admin-descrption">Описание урока</div>
+                <textarea  name="lesson_description" class="admin-textareaCode">{!! $description[0]->lesson_description !!}</textarea>
+            </div>
+
+            <div class="admin-block-console-result">
                 <div class="admin-descrption">HTML <a href="http://www.freebits.co.uk/convert-html-code-to-text.html" target="_blank">Отображение html кода</a></div>
                 <textarea  name="text_html" class="admin-textareaCode">{!! $description[0]->text_html !!}</textarea>
             </div>

@@ -12,6 +12,11 @@
         <input id="lesson_id" name="lesson_id" class="input-group" required>
         <div class="admin-main-blok">
             <div class="admin-block-console-result">
+                <div class="admin-descrption">Описание урока</div>
+                <textarea  name="lesson_description" class="admin-textareaCode" required></textarea>
+            </div>
+
+            <div class="admin-block-console-result">
                 <div class="admin-descrption">HTML</div>
                 <textarea  name="text_html" class="admin-textareaCode" required></textarea>
             </div>
@@ -27,7 +32,7 @@
             </div>
         </div>
 
-        <button class="btn btn-default form-control">Добавить лекцию</button>
+        <button class="btn btn-default form-control">Добавить описание</button>
     </form>
 
 @endsection

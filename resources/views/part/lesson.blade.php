@@ -18,7 +18,7 @@
         <?php  } ?>
     </style>
 
-    <h2 class="lesson-number">Урок {!! $showLesson[0]['lesson'] !!}<span class="glyphicon glyphicon-question-sign lesson-description"></span></h2>
+    <h2 class="lesson-number">Урок {!! $showLesson[0]['lesson'] !!}<span class="glyphicon glyphicon-question-sign lesson-description" data-string="lesson_description"></span></h2>
     <h2 class="part-number">Часть {!! $showLesson[0]['part'] !!}</h2>
     <input type="hidden" name="_token" id="_token" value="{{ csrf_token() }}">
     <input type="hidden" id="part-number" value="{!! $showLesson[0]['part'] !!}">
@@ -55,8 +55,8 @@
 
         <div class="block-lesson">
             <div class="block-lesson-child">
-                <h4 class="descrption-text">Jquery
-                    <div class="btn btn-lg main-description" data-text="Jquery" data-string="text_jquery"><span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span></div>
+                <h4 class="descrption-text">jQuery
+                    <div class="btn btn-lg main-description" data-text="jQuery" data-string="text_jquery"><span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span></div>
                 </h4>
                 <div class="block-console-inside">
                 {{$showLesson[0]['text_jquery']}}

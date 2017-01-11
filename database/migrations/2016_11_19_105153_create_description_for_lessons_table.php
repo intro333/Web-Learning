@@ -16,6 +16,7 @@ class CreateDescriptionForLessonsTable extends Migration
             $table->increments('id');
             $table->integer('part_id');
             $table->integer('lesson_id');
+            $table->text('lesson_description');
             $table->text('text_html');
             $table->text('text_css');
             $table->text('text_jquery');
