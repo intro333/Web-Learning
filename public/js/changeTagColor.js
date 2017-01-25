@@ -8,7 +8,9 @@ $( document ).ready(function() {
         .replace(/\<(\/div)\>/g, "<<b>$1</b>>")//со слешом ставится выше, чем без слеша(/div)
         .replace(/(div)/g, "<b>$1</b>")
         .replace(/\<(\/h5)\>/g, "<<b>$1</b>>")
+        .replace(/\<(\/p)\>/g, "<<b>$1</b>>")
         .replace(/\<(h5)\>/g, "<<b>$1</b>>")
+        .replace(/\<(p)\>/g, "<<b>$1</b>>")
         .replace(/\"(.+?)\"/g, "<span style='color: forestgreen;'><b>\"$1\"</b></span>");
     body.html(text);
 

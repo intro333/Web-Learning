@@ -19,7 +19,7 @@
             <p></p>
         </div>
         <div id="blok3">
-            <span onclick="showOutPopup()" class="close-button">Закрыть</span>
+            <span onclick="showOutPopup('what-is-description')" class="close-button">Закрыть</span>
         </div>
     </div>
 </div>
@@ -33,8 +33,7 @@
                 <span>Нумерация</span>
                 <span class="glyphicon glyphicon-ok right-for-options"></span>
             </div>
-            <div class="on-off-numeration"><span>Нумерация</span></div>
-            <div class="on-off-numeration"><span>Нумерация</span></div>
+            <div class="on-off-numeration"><span>Диаграмма</span></div>
         </div>
     </div>
 </div>

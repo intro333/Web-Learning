@@ -7,6 +7,7 @@ use App\DescriptionForLesson;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Illuminate\Support\Facades\Storage;
 
 class LessonsController extends Controller
 {
@@ -27,7 +28,8 @@ class LessonsController extends Controller
     public function startLesson($part, $lesson) {
         $allLessons = Lesson::all();
         $showLesson = Lesson::where('lesson', $lesson)->where('part', $part)->get();
-        return view('part.lesson', compact('showLesson', 'allLessons'));
+        $diagramFile = Storage::get('diagram_p1_l1.png');
+        return view('part.lesson', compact('showLesson', 'allLessons', 'diagramFile'));
     }
 
     /*Ajax POST показать описание с помощью кнопки "что-здесь"*/
@@ -35,6 +37,6 @@ class LessonsController extends Controller
         $description = DescriptionForLesson::where('part_id', '=', $request->input('part_id'))
                                             ->where('lesson_id', '=', $request->input('lesson_id'))
                                             ->lists($request->input('attr'));
-echo $description[0];
+        echo $description[0];
     }
 }

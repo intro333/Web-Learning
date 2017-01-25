@@ -49,8 +49,8 @@ $(document).on('click', '.popup_what-is-description_bg', function () {
     $(".popup_what-is-description").fadeOut(300);   //убираем всплывающее окно
 });
 
-function showOutPopup() {
-    $(".popup_what-is-description").fadeOut(300);   //убираем всплывающее окно
+function showOutPopup(selectorName) {
+    $(".popup_" + selectorName).fadeOut(300);   //убираем всплывающее окно
 };//END what-is-description
 
 //popup what-is-lang
@@ -188,3 +188,42 @@ $(document).on('click', '.on-off-numeration', function () {
         $('.block-console-inside span[data-line-number]').css('display', 'inline');
     }
 });//END main-description-popup
+
+//popup diagram
+$(document).on('click', '.lesson-diagram', function () {
+    var token = $('#_token').val();
+    var part = $('#part-number').val();
+    var lesson = $('#lesson-number').val();
+    var windowWidth  = $(window).width();
+    var windowHeight = $(window).height();
+    //Стереть предыдущее содержимое
+    $('#blok1').text('');
+    $('#blok2').html('');
+    if (windowWidth > 1024 && windowHeight > 600) {
+        $('.diagram_for-three-block').css('top', $(window).scrollTop() + 50);
+    } else if (windowHeight >= 960 && windowHeight < 1100) {
+        $('.diagram_for-three-block').css('top', $(window).scrollTop() + 50);
+    } else {
+        $('.diagram_for-three-block').css('top', $(window).scrollTop() + 50);
+    }
+    var url = "/lesson/get_image?_token=" + token + "&part_id=" + part + "&lesson_id=" + lesson;
+    $.ajax({
+        type: 'POST',
+        url: url,
+        dataType: 'text',
+        success: function (data) {
+
+            var imageResponse = jQuery.parseJSON(data);
+            var img = new Image();
+            img.src = 'data:image/gif;base64,' + imageResponse.contents;
+            // img.width = ?;TODO если уменьшить ширину и высоту файла, то он становится нечитаем
+            // img.height = ?;
+            $('#diagram_blok2').html(img);
+            $(".popup_diagram").fadeIn(300);
+        }
+    });
+});
+
+$(document).on('click', '.popup_diagram_bg', function () {
+    $(".popup_diagram").fadeOut(300);   //убираем всплывающее окно
+});

@@ -7,8 +7,7 @@
                 <span>Нумерация</span>
                 <span class="glyphicon glyphicon-ok right-for-options"></span>
             </div>
-            <div class="on-off-numeration"><span>Нумерация</span></div>
-            <div class="on-off-numeration"><span>Нумерация</span></div>
+            <div class="on-off-numeration"><span>Диаграммы</span></div>
         </div>
     </div>
 </div>

@@ -1,7 +1,7 @@
 @extends('app')
 @section('content')
     <style>
-        <?php if (true) { ?>
+        <?php if (false) { ?>
             .block-console-inside span[data-line-number] {
                 display: none;
             }
@@ -18,7 +18,7 @@
         <?php  } ?>
     </style>
 
-    <h2 class="lesson-number">Урок {!! $showLesson[0]['lesson'] !!}<span class="glyphicon glyphicon-question-sign lesson-description" data-string="lesson_description"></span></h2>
+    <h2 class="lesson-number">Урок {!! $showLesson[0]['lesson'] !!}<span class="glyphicon glyphicon-info-sign lesson-description tool-panel" data-string="lesson_description"></span><span class="glyphicon glyphicon-picture lesson-diagram tool-panel" data-string="lesson_diagram"></span></h2>
     <h2 class="part-number">Часть {!! $showLesson[0]['part'] !!}</h2>
     <input type="hidden" name="_token" id="_token" value="{{ csrf_token() }}">
     <input type="hidden" id="part-number" value="{!! $showLesson[0]['part'] !!}">
@@ -78,9 +78,23 @@
 
     <hr>
     @include('includes.nextOrPrevLesson')
-
     <!--Part 1 Подключаем стили и сценарии для этого урока-->
     <link rel="stylesheet" href="/css/part{!! $showLesson[0]['part'] !!}/lesson{!! $showLesson[0]['lesson'] !!}.css">
     <script src="/js/part{!! $showLesson[0]['part'] !!}/lesson{!! $showLesson[0]['lesson'] !!}.js"></script>
     <script src="/js/changeTagColor.js"></script>
+    <!-- диаграммы -->
+    <div class="popup_diagram">
+        <div class="popup_diagram_bg"></div>
+        <div class="diagram_for-three-block">
+            <div id="blok1">Диаграмма <a class="tooltipText2">
+                    {{--<span class="glyphicon glyphicon-question-sign question-for-diagram" data-string=""></span>--}}
+                    <p>Диаграммы</p></a>
+            </div>
+            <div id="diagram_blok2">
+            </div>
+            <div id="blok3">
+                <span onclick="showOutPopup('diagram')" class="close-button">Закрыть</span>
+            </div>
+        </div>
+    </div>
 @endsection

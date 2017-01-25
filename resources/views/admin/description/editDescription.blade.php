@@ -13,8 +13,8 @@
 
     <form method="POST" action="/admin/editDescription/{!! $description[0]->part_id !!}/{!! $description[0]->lesson_id !!}">
         <input type="hidden" name="_token" id="_token" value="{{ csrf_token() }}">
-        <label for="part">Номер части</label>
-        <input name="part" class="input-group" value="{!! $description[0]->part_id !!}">
+        <label for="part">Номер части</label><br>
+        <input name="part" class="input-grou" value="{!! $description[0]->part_id !!}"><br>
         <label for="lesson">Номер лекции</label>
         <input name="lesson" class="input-group" value="{!! $description[0]->lesson_id !!}">
         <div class="admin-main-blok">

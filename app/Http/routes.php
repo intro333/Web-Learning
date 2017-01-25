@@ -18,6 +18,8 @@
     Route::get('/lessons/{part}/{lesson}', 'LessonsController@startLesson');
     Route::post('/lessons/getDescription', 'LessonsController@showDescription');
 
+    Route::post('/lesson/get_image', 'API\FilesController@getDiagramImage');
+
 
 //Route::group(['middleware' => ['admin']], function () {
 //
