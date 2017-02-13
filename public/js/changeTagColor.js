@@ -3,16 +3,22 @@
  */
 $( document ).ready(function() {
     /*Цвет для тегов HTML*/
-    var body = $('div.block-console-inside:eq(0)');
-    var text = body.text().replace(/(class=)/g, "<span style='color: #2F4F4F;'><b>$1</b></span>")
-        .replace(/\<(\/div)\>/g, "<<b>$1</b>>")//со слешом ставится выше, чем без слеша(/div)
-        .replace(/(div)/g, "<b>$1</b>")
-        .replace(/\<(\/h5)\>/g, "<<b>$1</b>>")
-        .replace(/\<(\/p)\>/g, "<<b>$1</b>>")
-        .replace(/\<(h5)\>/g, "<<b>$1</b>>")
-        .replace(/\<(p)\>/g, "<<b>$1</b>>")
-        .replace(/\"(.+?)\"/g, "<span style='color: forestgreen;'><b>\"$1\"</b></span>");
-    body.html(text);
+    // var body = $('div.block-console-inside:eq(0)');
+    //
+    // var text = body.text().replace(/(class=)/g, "<span style='color: #2F4F4F;'><b>$1</b></span>")
+    //     .replace(/\<(\/div)\>/g, "<<b>$1</b>>")//со слешом ставится выше, чем без слеша(/div)
+    //     .replace(/(div)/g, "<b>$1</b>")
+    //     .replace(/\<(\/h5)\>/g, "<<b>$1</b>>")
+    //     .replace(/\<(\/h4)\>/g, "<<b>$1</b>>")
+    //     .replace(/\<(\/p)\>/g, "<<b>$1</b>>")
+    //     .replace(/\<(\/span)\>/g, "<<b>$1</b>>")
+    //     .replace(/\<(p)\>/g, "<<b>$1</b>>")
+    //     .replace(/\<(h5)\>/g, "<<b>$1</b>>")
+    //     .replace(/\<(h4)\>/g, "<<b>$1</b>>")
+    //     .replace(/\<(span)\>/g, "<<b>$1</b>>")
+    //     .replace(/\"(.+?)\"/g, "<span style='color: forestgreen;'><b>\"$1\"</b></span>");
+    // console.log(text)
+    // body.html(text);
 
     /*Цвет для селекторов CSS*/
     var body = $('div.block-console-inside:eq(1)');

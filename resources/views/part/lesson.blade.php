@@ -1,7 +1,7 @@
 @extends('app')
 @section('content')
     <style>
-        <?php if (false) { ?>
+        <?php if (true) { ?>
             .block-console-inside span[data-line-number] {
                 display: none;
             }
@@ -37,8 +37,9 @@
                     <div class="btn btn-lg main-description" data-text="HTML" data-string="text_html"><span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span></div>
                 </h4>
                 <div class="block-console-inside">
-                {{$showLesson[0]['text_html']}}
-            </div>
+{{--                {{$showLesson[0]['text_html']}}--}}
+                    @include('part1.lesson4')
+                </div>
         </div>
         </div>
 
